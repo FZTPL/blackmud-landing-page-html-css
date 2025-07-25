@@ -15,14 +15,18 @@
     <ul class="navigation-item">
         <li class='logo'><a href='#'><img src='/src/image/blackmud logo.svg'/></a></li>
         <input id="check" type="checkbox">
-        <span  class="menu">
-            <li class="tooltip"> <a href="#"><p class="menu-home">HOME</p></a></li>
-            <li class="tooltip"><a href="#"><p class="menu-aboutus">ABOUT US</p></a></li>
-            <li class="tooltip"><a href="#"><p class="menu-services">SERVICES</p></a></li>
-            <li class="tooltip"><a href="#"><p class="menu-blog">BLOG</p></a></li>
-            <li class="tooltip"><a href="#"><p class="menu-contact">CONTACT US</p></a></li>
-            <button>GET STARTED</button>
-        </span>
+        <div class="menu-items">
+            <span class="menu">
+                <li class="tooltip"> <a href="#"><p class="menu-home">HOME</p></a></li>
+                <li class="tooltip"><a href="#"><p class="menu-aboutus">ABOUT US</p></a></li>
+                <li class="tooltip"><a href="#"><p class="menu-services">SERVICES</p></a>
+                    <i class="fa-light fa-angle-down"></i>
+                </li>
+                <li class="tooltip"><a href="#"><p class="menu-blog">BLOG</p></a></li>
+                <li class="tooltip"><a href="#"><p class="menu-contact">CONTACT US</p></a></li>
+            </span>
+                <span class="button"><a href="#">GET STARTED</a></span>
+        </div>
         <label for="check" class="hamburger-bar"><i class="fa-solid fa-bars"></i></label>
         <label for="check" class="hamburger-xmark"><i class="fa-solid fa-xmark"></i></label>
     </ul>

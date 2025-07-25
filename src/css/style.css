@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: content-box;
 }
-body{
+head{
     width: 1440px;
 }
 .inter{
@@ -17,24 +17,30 @@ body{
     align-items: center;
     background-color: black;
     padding: 24px 64px;
-    height: 107px;
+    /* height: 107px; */
+}
+.menu-items{
+    width: 877px;
+    /* height: 59px; */
+    gap: 56px;
+    display: flex;
 }
 .logo{
     max-width: 20%;
 }
 .logo img{
     width: 250px;
-    height: 52px;
-    position: absolute;
-    top: 24px;
-    left: 64px;
+    /* height: 52px; */
+    /* margin-top: 24px; */
+    /* margin-left: 64px; */
     border: 1px solid black;
 }
 .menu{
     display: inline-flex;
-    justify-content: space-between;
-    gap: 64px;
-    width: 46%;
+    /* justify-content: space-between; */
+    gap: 32px;
+    width: 622px;
+    height: 32px;
     top: 0;
     right: -100%;
     transition: all 0.2s ease-in-out;
@@ -49,14 +55,35 @@ body{
     background-color: white;
     transition: 0.50s ease-in-out;
 }
+.button a{
+    width: 199px;
+    padding: 16px 32px;
+    background: #eeee;
+    color: #000000;
+    text-decoration: none;
+    font-family: "Inter";
+    cursor: pointer;
+}
 .menu-home{
     font-weight: 700;
     line-height: 150%;
     width: 65px;
     height: 32px;
-    padding: 4px;
+    /* padding: 4px; */
     gap: 4px;
     font-family: inter;
+}
+.menu-aboutus{
+    /* padding: 4px; */
+    gap: 4px;
+    font-size: 16px;
+    font-family: inter;
+}
+.menu-services{
+
+}
+.fa-angle-down{
+    color: #ffff;
 }
 li a{
     font-size: 16px;
@@ -70,13 +97,13 @@ li a{
    position: relative;
    font-family: "Inter";
 }
-button{
+/* button{
     font-weight: 700;
     width: 199px;
     height: 59px;
     padding: 16px 32px;
     font-size: 16px;
-}
+} */
  .tooltip p{
     cursor: pointer;
     /* position: relative; */
