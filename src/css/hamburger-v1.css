@@ -6,7 +6,6 @@
 
 .inter{
     font-family: "Inter";
-    /* font-weight: 700; */
     font-style: normal;
 }
 
@@ -22,8 +21,8 @@
 }
 
 .logo{
-    margin-left: 62%;
-    max-width: 50%;
+    margin-left: 34%;
+    max-width: 36%;
 }
 
 .logo img{
@@ -72,26 +71,24 @@ input{
     background-color: rgb(0, 0, 0);
     list-style: none;
     line-height: 3em;
-    top: 0;
-    text-align: left;
-    margin-top: 3em;
-    top: -100%;
+    text-align: center;
+    margin-top: 10%;
+    left: -100%;
     transition: all 0.15s ease-in-out;
 }
 
 .menu-items{
-    margin: 10px;
+    padding: 10px;
 }
 
 #check:checked ~ .menu{
-    top: 0;
+    left: 0;
 }
 
 a{
     color: white;
     text-decoration: none;
 }
-
 .button a{
     background-color: white;
     color: black;
