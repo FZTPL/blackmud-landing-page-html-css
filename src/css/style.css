@@ -4,10 +4,15 @@
     box-sizing: content-box;
 }
 
+head{
+    width: 1440px;
+}
+
 .inter{
     font-family: "Inter";
-    /* font-weight: 700; */
     font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .navigation-item{
@@ -15,10 +20,6 @@
     background-color: black;
     padding: 10px 10px 8px 0;
     text-align: center;
-}
-
-.menu li:first-child{
-    font-weight: 700;
 }
 
 .logo{
@@ -33,16 +34,16 @@
 .hamburger-bar{
     color: white;
     position: absolute;
-    font-size: 28px;
+    font-size: 24px;
     left: 18px;
-    top: 10px;
+    top: 12px;
 }
 
 .hamburger-xmark{
     color: white;
     position: absolute;
-    font-size: 30px;
-    left: 20px;
+    font-size: 26px;
+    left: 18px;
     top: 10px;
 }
 
@@ -66,25 +67,31 @@ input{
     opacity: 0;
 }
 
+.menu-items:hover{
+    font-weight: bold;
+}
+
 .menu{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     position: fixed;
     background-color: rgb(0, 0, 0);
     list-style: none;
     line-height: 3em;
-    top: 0;
+    left: 0;
     text-align: left;
-    margin-top: 3em;
-    top: -100%;
-    transition: all 0.15s ease-in-out;
+    margin-top: 10%;
+    left: -100%;
+    transition: all 0.25s ease-in-out;
 }
 
 .menu-items{
-    margin: 10px;
+    padding-left: 34px;
 }
 
 #check:checked ~ .menu{
-    top: 0;
+    left: 0;
 }
 
 a{
@@ -96,27 +103,104 @@ a{
     background-color: white;
     color: black;
     padding: 10px;
-    margin: 10px;
+}
+
+.fa-angle-down{
+    display: none;
+}
+
+.button{
+    margin: 8px 0 20px 34px;
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
     .menu{
         margin-top: 8%;
+        line-height: 4em;
     }
 
     .hamburger-bar{
-        font-size: 3em;
+        font-size: 2em;
+        left: 22px;
+        top: 20px;
     }
 
     .hamburger-xmark{
-        font-size: 3em;
+        font-size: 2em;
+        left: 24px;
+        top: 20px;
     }
 
     .menu-items{
         font-size: 1.4em;
+        padding-left: 34px;
     }
 
     .button{
         font-size: 20px;
+    }
+
+    .logo{
+        margin-left: 65%;
+        max-width: 34%;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .logo{
+        max-width: 20%;
+        margin-left: 0;
+        /* border: 1px solid #ffff; */
+        padding-left: 64px;
+    }
+
+    .logo img{
+        width: 250px;
+    }
+
+    .hamburger-bar,.hamburger-xmark{
+        display: none;
+    }
+
+    .navigation-item{
+        gap: 22%;
+        height: 74px;
+        align-items: center;
+    }
+
+    .menu{
+        position: static;
+        margin-top: 0;
+        flex-direction: row;
+        line-height: 2em;
+        gap: 32px;
+    }
+
+    .button a{
+        margin: 0;
+        padding: 12px 30px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .button{
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .menu-items{
+        position: relative;
+        padding-top: 12px;
+        padding-left: 10px;
+    }
+
+    .fa-angle-down{
+        color: white;
+        position: absolute;
+        left: 105%;
+        top: 32%;
+        cursor: pointer;
+        font-size: 20px;
+        display: block;
     }
 }
