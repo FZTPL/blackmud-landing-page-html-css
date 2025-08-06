@@ -4,9 +4,9 @@
     box-sizing: content-box;
 }
 
-head{
-    width: 1440px;
-}
+/* body{
+    max-width: 1440px;
+} */
 
 .inter{
     font-family: "Inter";
@@ -88,6 +88,7 @@ input{
 
 .menu-items{
     padding-left: 34px;
+    font-size: 14px;
 }
 
 #check:checked ~ .menu{
@@ -111,6 +112,11 @@ a{
 
 .button{
     margin: 8px 0 20px 34px;
+    font-size: 14px;
+}
+
+.button a:hover{
+    background-color: pink;
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
@@ -132,12 +138,12 @@ a{
     }
 
     .menu-items{
-        font-size: 1.4em;
+        font-size: 16px;
         padding-left: 34px;
     }
 
     .button{
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .logo{
@@ -163,9 +169,11 @@ a{
     }
 
     .navigation-item{
-        gap: 22%;
+        gap: 16%;
         height: 74px;
         align-items: center;
+        max-width: 1440px;
+        margin: auto;
     }
 
     .menu{
@@ -173,7 +181,8 @@ a{
         margin-top: 0;
         flex-direction: row;
         line-height: 2em;
-        gap: 32px;
+        gap: 48px;
+        transition: all 0s ease-in-out;
     }
 
     .button a{
