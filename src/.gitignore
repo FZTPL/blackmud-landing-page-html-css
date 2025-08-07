@@ -33,7 +33,7 @@ Thumbs.db
 .anima/
 
 # Mac specific files
-.DS_Store
+*.DS_Store
 
 # Gulp specific files
 #gulpfile.js
