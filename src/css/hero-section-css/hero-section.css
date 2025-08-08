@@ -48,7 +48,7 @@
     width: 90%;
     height: 25em;
     object-fit: cover;
-    margin: 0 16px 18px 22px;
+    margin: 0 0 18px 22px;
   }
 
   @media screen and (min-width:768px) and (max-width:1023px) {
@@ -81,4 +81,11 @@
       .button{
         width: 284px;
       }
+
+  @media screen and (min-width:1024px) {
+    .hero-text > h1{
+      padding-top: 80px;
+      font-size: 96px;
+    }
+  }
   }
