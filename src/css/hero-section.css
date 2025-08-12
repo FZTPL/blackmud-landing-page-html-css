@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.hero{
+  background-color: #000;
+  color: white;
+  /* background-image: url(/src/image/city.jpeg);
+  background-size: cover;
+  height: 52vh; */
+}
+
+.hero-text{
+  margin: 0 24px 24px;
+}
+
+.hero-text > p{
+  font-size: 14px;
+  font-weight: 500;
+  /* color: #ffff; */
+  margin-top: 32px;
+  line-height: 20px;
+  /* margin-bottom: 20px; */
+  margin-bottom: 34px;
+  color: #868686;
+}
+
+.hero-button > a{
+  color: #ffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.hero-button{
+  /* width: 233px; */
+  padding: 18px 42px;
+  background-color:#3582E5;
+  text-align: center;
+}
+
+.hero-text > h1{
+  padding-top: 48px;
+  font-size: 52px;
+}
+
+.hero-image > img{
+  width: 90%;
+  height: 25em;
+  object-fit: cover;
+  margin: 0 0 18px 22px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+  /* .hero{
+    height: 66vh;
+  } */
+
+  .hero-text > p{
+      margin-top: 64px;
+      line-height: 30px;
+  }
+
+  .hero-button > a{
+      font-size: 18px;
+      padding-left: 32px;
+  }
+
+  .hero-text > h1{
+      padding-top: 80px;
+      font-size: 96px;
+    }
+
+    .hero-text > p{
+      font-size: 18px;
+      margin-top: 64px;
+      line-height: 30px;
+    }
+
+    .hero-image > img{
+      width: 95%;
+      height: 34em;;
+    }
+
+    .hero-button{
+      width: 284px;
+    }
+  }
+
+@media screen and (min-width:1024px){
+  .hero-text > h1{
+    padding-top: 120px;
+    font-size: 112px;
+    transform: translateX(14px);
+    width: 146%;
+    /* margin-left: 64px; */
+  }
+
+  .hero{
+    display: flex;
+    max-width: 1450px;
+    height: 914px;
+    margin: auto;
+    background-image: none;
+  }
+
+  .hero-image > img{
+    /* width: auto;
+    height: auto;
+    object-fit: cover;
+    margin: 0; */
+    display: none;
+  }
+
+  .hero-text{
+    width: 40%;
+  }
+
+  .hero-image{
+    width: 60%;
+    /* margin-left: 64px; */
+    background-image: url(/src/image/city.jpeg);
+
+  }
+
+  .hero-text p{
+    margin-left: 24px;
+    font-size: 16px;
+    margin-top: 88px;
+    color: #868686 ;
+    margin-bottom: 48px;
+   }
+
+  .hero-button{
+    margin-left: 24px;
+    margin-top: 48px;
+  }
+
+  .linebreak{
+    display: block;
+  }
+
+  /* .heros-button{
+    margin-left: 24px;
+    margin-top: 48px;
+    width: 233px;
+    padding: 16px 32px;
+    background-color:#3582E5;
+    text-align: center;
+  } */
+}

@@ -165,7 +165,7 @@ a{
     }
 
     .navigation-item{
-        gap: 16%;
+        gap: 10%;
         height: 74px;
         align-items: center;
         max-width: 1440px;
