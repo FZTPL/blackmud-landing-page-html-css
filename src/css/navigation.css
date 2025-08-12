@@ -81,6 +81,7 @@ input{
     margin-top: 10%;
     left: -100%;
     transition: all 0.25s ease-in-out;
+    height: 100%;
 }
 
 .menu-items{
@@ -90,6 +91,7 @@ input{
 
 #check:checked ~ .menu{
     left: 0;
+    width: 50%;
 }
 
 a{
