@@ -148,7 +148,106 @@ a{
     }
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1024px) and (max-width: 1024px) {
+    .logo{
+        max-width: 12% !important;
+        padding-left: 24px !important;
+    }
+
+    .logo img{
+        width: 12em !important;
+    }
+
+    .menu{
+        gap: 26px !important;
+    }
+
+    .button{
+        margin-left: 0;
+        margin-bottom: 12px;
+    }
+
+    .navigation-item{
+        gap: 14% !important;
+    }
+
+    .fa-angle-down{
+        top: 37% !important;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1440px){
+    .logo{
+        max-width: 20%;
+        margin-left: 0;
+        padding-left: 64px;
+    }
+
+    .logo img{
+        width: 250px;
+    }
+
+    .hamburger-bar,.hamburger-xmark{
+        display: none;
+    }
+
+    .navigation-item{
+        gap: 14%;
+        height: 74px;
+        align-items: center;
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    .menu{
+        position: static;
+        margin-top: 0;
+        flex-direction: row;
+        line-height: 2em;
+        gap: 36px;
+        transition: all 0s ease-in-out;
+    }
+
+    .button a{
+        margin: 0;
+        padding: 12px 30px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .button{
+        margin-top: 10px;
+        cursor: pointer;
+        margin-bottom: 12px;
+        margin-left: 0;
+    }
+
+    .menu-items{
+        position: relative;
+        padding-top: 12px;
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .fa-angle-down{
+        color: white;
+        position: absolute;
+        left: 105%;
+        top: 32%;
+        cursor: pointer;
+        font-size: 20px;
+        display: block;
+    }
+}
+
+@media screen and (min-width:1680px) and (max-width: 1680px) {
+   .menu{    
+        line-height: 1em !important;
+        gap: 68px !important;
+    }
+}
+
+@media screen and (min-width:1441px) and (max-width:1980px){
+    
     .logo{
         max-width: 20%;
         margin-left: 0;
@@ -165,11 +264,9 @@ a{
     }
 
     .navigation-item{
-        gap: 10%;
+        gap: 18%;
         height: 74px;
         align-items: center;
-        max-width: 1440px;
-        margin: auto;
     }
 
     .menu{
@@ -177,19 +274,19 @@ a{
         margin-top: 0;
         flex-direction: row;
         line-height: 2em;
-        gap: 48px;
+        gap: 96px;
         transition: all 0s ease-in-out;
     }
 
     .button a{
         margin: 0;
         padding: 12px 30px;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: bold;
     }
 
     .button{
-        margin-top: 10px;
+        margin-top: 14px;
         cursor: pointer;
     }
 
@@ -197,6 +294,7 @@ a{
         position: relative;
         padding-top: 12px;
         padding-left: 10px;
+        font-size: 20px;
     }
 
     .fa-angle-down{
