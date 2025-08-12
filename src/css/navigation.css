@@ -16,6 +16,7 @@
     background-color: black;
     padding: 10px 10px 8px 0;
     text-align: center;
+    position: fixed;
 }
 
 .logo{
@@ -196,6 +197,7 @@ a{
         align-items: center;
         max-width: 1440px;
         margin: auto;
+        position: static;
     }
 
     .menu{
@@ -242,7 +244,11 @@ a{
 @media screen and (min-width:1680px) and (max-width: 1680px) {
    .menu{    
         line-height: 1em !important;
-        gap: 68px !important;
+        gap: 60px !important;
+    }
+
+    .fa-angle-down{
+        top: 20% !important;
     }
 }
 
@@ -267,11 +273,12 @@ a{
         gap: 18%;
         height: 74px;
         align-items: center;
+        position: static;
     }
 
     .menu{
         position: static;
-        margin-top: 0;
+        margin-top: 10px;
         flex-direction: row;
         line-height: 2em;
         gap: 96px;
