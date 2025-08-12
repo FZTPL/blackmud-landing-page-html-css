@@ -114,7 +114,7 @@
   .hero{
     display: flex;
     max-width: 1450px;
-    /* height: 914px; */
+    height: 914px;
     margin: auto;
     background-image: none;
   }
@@ -160,11 +160,13 @@
     .hero{
       max-width: none;
       margin: 0;
+      height: 870px;
     }
 
     .hero-text p{
       font-size: 20px;
       line-height: 28px;
+      margin-bottom: 58px;
     }
 
     .hero-text h1{
@@ -174,5 +176,9 @@
 
     .hero-button{
       padding: 28px 82px;
+    }
+
+    .hero-button a{
+      font-size: 18px;
     }
   }
