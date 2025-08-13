@@ -91,7 +91,6 @@ input{
 
 #check:checked ~ .menu{
     left: 0;
-    width: 50%;
 }
 
 a{
@@ -175,7 +174,7 @@ a{
     }
 
     .fa-angle-down{
-        top: 37% !important;
+        top: 26% !important;
     }
 }
 @media screen and (min-width:1024px) and (max-width:1440px){
@@ -236,10 +235,21 @@ a{
         color: white;
         position: absolute;
         left: 105%;
-        top: 32%;
+        top: 24%;
         cursor: pointer;
         font-size: 20px;
         display: block;
+    }
+}
+
+@media screen and (min-width:1440px) and (max-width: 1440px) {
+    .navigation-item{
+        gap: 20% !important;
+    }
+
+    .menu{
+        gap: 44px !important;
+        margin-top: 16px !important;
     }
 }
 
@@ -247,10 +257,11 @@ a{
    .menu{    
         line-height: 1em !important;
         gap: 60px !important;
+        margin-top: 28px !important;
     }
 
     .fa-angle-down{
-        top: 20% !important;
+        top: 14% !important;
     }
 }
 
@@ -310,7 +321,7 @@ a{
         color: white;
         position: absolute;
         left: 105%;
-        top: 32%;
+        top: 24%;
         cursor: pointer;
         font-size: 20px;
         display: block;
