@@ -91,7 +91,7 @@ input{
 
 #check:checked ~ .menu{
     left: 0;
-}
+} 
 
 a{
     color: white;
