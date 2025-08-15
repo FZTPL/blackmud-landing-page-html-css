@@ -152,7 +152,7 @@ a{
 
 @media screen and (min-width:1024px) and (max-width: 1024px) {
     .logo{
-        max-width: 12% !important;
+        /* max-width: 12% !important; */
         padding-left: 24px !important;
     }
 
@@ -170,11 +170,11 @@ a{
     }
 
     .navigation-item{
-        gap: 14% !important;
+        gap: 6% !important;
     }
 
     .fa-angle-down{
-        top: 26% !important;
+        top: 36% !important;
     }
 }
 @media screen and (min-width:1024px) and (max-width:1440px){
@@ -205,7 +205,7 @@ a{
         position: static;
         margin-top: 0;
         flex-direction: row;
-        line-height: 2em;
+        /* line-height: 2em; */
         gap: 36px;
         transition: all 0s ease-in-out;
     }
@@ -235,7 +235,7 @@ a{
         color: white;
         position: absolute;
         left: 105%;
-        top: 24%;
+        top: 37%;
         cursor: pointer;
         font-size: 20px;
         display: block;
@@ -257,7 +257,7 @@ a{
    .menu{    
         line-height: 1em !important;
         gap: 60px !important;
-        margin-top: 28px !important;
+        margin-top: 16px !important;
     }
 
     .fa-angle-down{
