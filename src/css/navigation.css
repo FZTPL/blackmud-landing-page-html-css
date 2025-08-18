@@ -152,7 +152,7 @@ a{
 
 @media screen and (min-width:1024px) and (max-width: 1024px) {
     .logo{
-        max-width: 12% !important;
+        /* max-width: 12% !important; */
         padding-left: 24px !important;
     }
 
@@ -170,11 +170,11 @@ a{
     }
 
     .navigation-item{
-        gap: 14% !important;
+        gap: 6% !important;
     }
 
     .fa-angle-down{
-        top: 26% !important;
+        top: 36% !important;
     }
 }
 @media screen and (min-width:1024px) and (max-width:1440px){
@@ -205,8 +205,8 @@ a{
         position: static;
         margin-top: 0;
         flex-direction: row;
-        line-height: 2em;
-        gap: 36px;
+        /* line-height: 2em; */
+        gap: 34px;
         transition: all 0s ease-in-out;
     }
 
@@ -225,7 +225,7 @@ a{
     }
 
     .menu-items{
-        position: relative;
+        /* position: relative; */
         padding-top: 12px;
         padding-left: 10px;
         font-size: 16px;
@@ -233,12 +233,11 @@ a{
 
     .fa-angle-down{
         color: white;
-        position: absolute;
-        left: 105%;
-        top: 24%;
         cursor: pointer;
         font-size: 20px;
         display: block;
+        padding-left: 4em;
+        transform: translateY(-33px);
     }
 }
 
@@ -255,9 +254,9 @@ a{
 
 @media screen and (min-width:1680px) and (max-width: 1680px) {
    .menu{    
-        line-height: 1em !important;
+        /* line-height: 1em !important; */
         gap: 60px !important;
-        margin-top: 28px !important;
+        margin-top: 16px !important;
     }
 
     .fa-angle-down{
@@ -308,10 +307,11 @@ a{
     .button{
         margin-top: 14px;
         cursor: pointer;
+        margin-left: 9px;
     }
 
     .menu-items{
-        position: relative;
+        /* position: relative; */
         padding-top: 12px;
         padding-left: 10px;
         font-size: 20px;
@@ -319,11 +319,10 @@ a{
 
     .fa-angle-down{
         color: white;
-        position: absolute;
-        left: 105%;
-        top: 24%;
         cursor: pointer;
         font-size: 20px;
         display: block;
+        padding-left: 5em;
+        transform: translateY(-24px);
     }
 }
