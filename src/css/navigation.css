@@ -240,7 +240,7 @@ a{
         transform: translateY(-20px);
     }
 }
-@media screen and (min-width:1200px) and (max-width: 1380px) {
+@media screen and (min-width:1300px) and (max-width: 1380px) {
     .navigation-item{
         gap: 18%;
     }
