@@ -206,7 +206,7 @@ a{
         margin-top: 0;
         flex-direction: row;
         /* line-height: 2em; */
-        gap: 34px;
+        gap: 44px;
         transition: all 0s ease-in-out;
     }
 
