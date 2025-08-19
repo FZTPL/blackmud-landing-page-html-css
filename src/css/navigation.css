@@ -75,7 +75,7 @@ input{
     position: fixed;
     background-color: rgb(0, 0, 0);
     list-style: none;
-    /* line-height: 3em; */
+    line-height: 3em;
     left: 0;
     text-align: left;
     margin-top: 10%;
@@ -176,6 +176,10 @@ a{
     .fa-angle-down{
         top: 36% !important;
     }
+
+    .hero-button{
+        padding: 18px 28px;
+    }
 }
 @media screen and (min-width:1024px) and (max-width:1440px){
     .logo{
@@ -205,7 +209,7 @@ a{
         position: static;
         margin-top: 0;
         flex-direction: row;
-        /* line-height: 2em; */
+        line-height: 2em;
         gap: 44px;
         transition: all 0s ease-in-out;
     }
@@ -225,7 +229,6 @@ a{
     }
 
     .menu-items{
-        /* position: relative; */
         padding-top: 12px;
         padding-left: 10px;
         font-size: 16px;
@@ -237,7 +240,7 @@ a{
         font-size: 20px;
         display: block;
         padding-left: 4em;
-        transform: translateY(-20px);
+        transform: translateY(-25px);
     }
 }
 @media screen and (min-width:1300px) and (max-width: 1380px) {
@@ -300,7 +303,7 @@ a{
         position: static;
         margin-top: 10px;
         flex-direction: row;
-        /* line-height: 2em; */
+        line-height: 2em;
         gap: 48px;
         transition: all 0s ease-in-out;
     }
