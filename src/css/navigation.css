@@ -301,7 +301,7 @@ a{
         margin-top: 10px;
         flex-direction: row;
         /* line-height: 2em; */
-        gap: 96px;
+        gap: 48px;
         transition: all 0s ease-in-out;
     }
 

@@ -135,7 +135,7 @@
   .hero-image{
     width: 60%;
     /* margin-left: 64px; */
-    background-image: url(../image/aboutus.png);
+    background-image: url(../image/city.jpeg);
 
   }
 
@@ -175,7 +175,7 @@
   }
 
   .hero-text h1{
-    font-size: 128px;
+    font-size: 122px;
     line-height: 112px;
   }
 
