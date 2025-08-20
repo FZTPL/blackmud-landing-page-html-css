@@ -21,7 +21,6 @@
     line-height: 20px;
     color: #666666;
     margin-bottom: 40px;
-    line-height: 20px;
   }
   
   .aboutus-button > a{
@@ -55,6 +54,7 @@
     padding-top: 26px;
     font-weight: bold;
     padding-bottom: 8px;
+    line-height: 24px;
   }
   
   .aboutus-image > img{
@@ -120,6 +120,8 @@
       padding-top: 32px;
       font-size: 88px;
       font-weight: 700;
+      letter-spacing: -4px;
+      line-height: 100%;
     }
 
     .aboutus-text > p{
@@ -127,6 +129,7 @@
       font-weight: 500;
       margin-bottom: 40px;
       margin-top: 72px;
+      line-height: 24px;
     }
 
     .aboutus{
@@ -140,6 +143,7 @@
       grid-column: 9/13;
       background-image: url(../image/aboutus.png);
       background-size: cover;
+      background-position: center;
     }
 
     .aboutus-image > img{

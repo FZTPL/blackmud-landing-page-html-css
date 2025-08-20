@@ -41,6 +41,7 @@
   padding: 18px 42px;
   background-color:#3582E5;
   text-align: center;
+  border: 0;
 }
 
 .hero-text > h1{
@@ -136,6 +137,7 @@
     width: 60%;
     /* margin-left: 64px; */
     background-image: url(../image/city.jpeg);
+    background-position: right center;
 
   }
 
@@ -165,25 +167,34 @@
   .hero{
     max-width: none;
     margin: 0;
-    height: 870px;
+    height: 722px;
   }
 
   .hero-text p{
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 58px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 48px;
+    letter-spacing: 0;
   }
 
   .hero-text h1{
-    font-size: 122px;
-    line-height: 112px;
+    font-size: 112px;
+    line-height: 101px;
+    letter-spacing: -5.4px;
   }
 
   .hero-button{
-    padding: 28px 82px;
+    padding: 16px 32px;
+    margin-top: 0;
   } 
 
   .hero-button a{
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 3px;
+  }
+
+  .hero-text{
+    margin-left: 47px;
   }
 }
