@@ -8,6 +8,7 @@
     background-color: #D9D9D9;
     color: white;
     /* height: auto; */
+    padding-top: 100px;
   }
   
   .aboutus-text{
@@ -18,7 +19,7 @@
     font-size: 14px;
     font-weight: 400;
     margin-top: 32px;
-    line-height: 20px;
+    line-height: 21px;
     color: #666666;
     margin-bottom: 40px;
   }
@@ -26,13 +27,13 @@
   .aboutus-button > a{
     color: #000000;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
   }
   
   .aboutus-button{
-    padding: 18px 26px;
+    padding: 12px 20px;
     background-color: #FFFF;
     text-align: center;
     color: #000000;
@@ -40,19 +41,20 @@
   }
   
   .aboutus-text > h1{
-    padding-top: 32px;
+    padding-top: 24px;
     font-size: 46px;
     color: #000000;;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: -2px;
+    line-height: 46px;
   }
 
   .aboutus  h2{
     color: #3582E5;
     width: 84px;
-    font-size: 16px;
+    font-size: 14px;
     padding-top: 26px;
-    font-weight: bold;
+    font-weight: 600;
     padding-bottom: 8px;
     line-height: 24px;
   }
@@ -68,31 +70,35 @@
   .border{
     border-bottom: 1px solid black;
     width: 11%;
-    padding-top: 100px;
   }
 
   @media screen and (min-width:768px) and (max-width:1023px) { 
     .aboutus-button > a{
-        font-size: 18px;
-        padding-left: 8px;
+        font-size: 16px;
+        /* padding-left: 8px; */
+        letter-spacing: 2px;
     }
   
     .aboutus-text > h1{
-        padding-top: 32px;
+        padding-top: 28px;
         font-size: 72px;
-        letter-spacing: 4px;
+        letter-spacing: -2px;
+        line-height: 72px;
     }
   
+      .aboutus{
+        padding-top: 150px;
+      }
       .aboutus-text > p{
         font-size: 16px;
         margin-top: 64px;
-        line-height: 30px;
+        line-height: 24px;
         margin-bottom: 40px;
     }
   
       .aboutus-image > img{
         width: 94%;
-        height: 34em;;
+        height: 34em;
     }
   
       .border{
@@ -101,31 +107,43 @@
     }
 
       .aboutus-button{
-        padding: 18px 24px;
+        padding: 14px 24px;
     }
   }
 
-  @media screen and  (min-width:1024px) and (max-width:1980px) {
+  @media screen and  (min-width:1024px) and (max-width:1440px) {
+    .aboutus-text{
+      grid-column: 1/7 !important;
+    }
+
+    .aboutus-image{
+      grid-column: 8/13 !important;
+    }
+  }
+
+  @media screen and  (min-width:1024px) and (max-width:1440px) {
     .border{
       width: 42px;
       padding-top: 0;
     }
 
     .aboutus-text{
-      grid-column: 1/8;
+      grid-column: 1/9;
       padding-bottom: 200px;
     }
 
     .aboutus-text > h1{
       padding-top: 32px;
-      font-size: 88px;
+      /* font-size: 88px; */
+      font-size: 72px;
       font-weight: 700;
       letter-spacing: -4px;
       line-height: 100%;
     }
 
     .aboutus-text > p{
-      font-size: 16px;
+      font-size: 14px;
+      /* font-size: 16px; */
       font-weight: 500;
       margin-bottom: 40px;
       margin-top: 72px;
@@ -150,6 +168,72 @@
       display: none;
     }
 
+    .aboutus-button{
+      Padding: 16px 32px;
+    }
+
+    .aboutus-button a{
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .linebreak{
+      display: block;
+    }
+  }
+  
+  @media screen and (min-width:1441px){
+    .border{
+      width: 34px;
+      padding-top: 0;
+    }
+
+    .aboutus-text{
+      grid-column: 1/7;
+      padding-bottom: 202px;
+    }
+
+    .aboutus-text > h1{
+      padding-top: 36px;
+      font-size: 90px;
+      font-weight: 700;
+      letter-spacing: -4px;
+      line-height: 100%;
+    }
+
+    .aboutus-text > p{
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 42px;
+      margin-top: 74px;
+      line-height: 26px;
+    }
+
+    .aboutus{
+      display: grid;
+      grid-template-columns: repeat(12,1fr);
+      padding-top: 200px;
+      padding-left: 66px;
+    }
+
+    .aboutus-image{
+      grid-column: 8/13;
+      background-image: url(../image/aboutus.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .aboutus-image > img{
+      display: none;
+    }
+
+    .aboutus-button{
+      Padding: 20px 36px;
+    }
+
+    .aboutus-button a{
+      font-size: 18px;
+      font-weight: 700;
+    }
     .linebreak{
       display: block;
     }
