@@ -41,6 +41,7 @@
   padding: 18px 42px;
   background-color:#3582E5;
   text-align: center;
+  border: 0;
 }
 
 .hero-text > h1{
@@ -105,16 +106,19 @@
 @media screen and (min-width:1024px){
   .hero-text > h1{
     padding-top: 120px;
-    font-size: 98px;
+    /* font-size: 98px; */
     transform: translateX(14px);
     width: 148%;
     /* margin-left: 64px; */
+    font-size: 112px;
+    line-height: 101px;
+    letter-spacing: -5.4px;
   }
 
   .hero{
     display: flex;
     max-width: 1450px;
-    height: 914px;
+    /* height: 914px; */
     margin: auto;
     background-image: none;
   }
@@ -130,30 +134,41 @@
   .hero-text{
     width: 40%;
     margin-bottom: 60px;
+    margin-left: 47px;
   }
 
   .hero-image{
     width: 60%;
     /* margin-left: 64px; */
     background-image: url(../image/city.jpeg);
+    background-position: right center;
 
   }
 
   .hero-text p{
     margin-left: 24px;
-    font-size: 16px;
     margin-top: 88px;
     color: #868686 ;
+    font-size: 16px;
+    line-height: 24px;
     margin-bottom: 48px;
+    letter-spacing: 0;
    }
 
   .hero-button{
     margin-left: 24px;
     margin-top: 48px;
+    padding: 16px 32px;
   }
 
   .linebreak{
     display: block;
+  }
+
+  .hero-button a{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 3px;
   }
 }
 @media screen and (min-width:1440px) and (max-width: 1440px) {
@@ -161,29 +176,45 @@
     font-size: 110px;
   }
 }
+
+@media screen and (min-width:1600px) and (max-width: 1700px) {
+  .hero{
+    height: 872px !important;
+  }
+}
+
 @media screen and (min-width:1441px) and (max-width:1980px){
   .hero{
     max-width: none;
     margin: 0;
-    height: 870px;
+    /* height: 722px; */
   }
 
-  .hero-text p{
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 58px;
-  }
+  /* .hero-text p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 48px;
+    letter-spacing: 0;
+  } */
 
-  .hero-text h1{
-    font-size: 122px;
-    line-height: 112px;
-  }
+  /* .hero-text h1{
+    font-size: 112px;
+    line-height: 101px;
+    letter-spacing: -5.4px;
+  } */
 
   .hero-button{
-    padding: 28px 82px;
+    /* padding: 16px 32px; */
+    margin-top: 0;
   } 
 
-  .hero-button a{
-    font-size: 18px;
-  }
+  /* .hero-button a{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 3px;
+  } */
+
+  /* .hero-text{
+    margin-left: 47px;
+  } */
 }
