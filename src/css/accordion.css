@@ -7,9 +7,7 @@
 
 .container{
     background-color: #000000;
-    /* padding-top: 100px; */
-    /* color: white; */
-    padding: 100px 24px 24px;
+    padding: 100px 16px 0 16px;
 }
 
 .accordion-title h1{
@@ -22,7 +20,7 @@
 }
 
 .accordion-title h2{
-    font-size: 14px;
+    font-size: 16px;
     color: #3582e5;
     width: 84px;
     font-weight: 600;
@@ -42,16 +40,16 @@
 
 .accordion-component h1{
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     font-size: 32px;
     line-height: 100%;
-    letter-spacing: -2%;
+    letter-spacing: -2px;
     padding-top: 16px;
 }
 
 .accordion-component h2{
-    font-size: 14px;
+    font-size: 16px;
     color: #ffffff;
     width: 84px;
     font-weight: 600;
@@ -107,6 +105,7 @@
     height: 40px;
     background-color: #3582E5;
     border-radius: 50%;
+    margin-top: 8px;
 }
 
 .accordion-icon{
@@ -123,26 +122,27 @@ input{
     display: none;
 }
 
-.accordion-business-planning h3{
-    font-size: 14px;
-    color: #ffffff;
+.accordion-content h2{
+    font-size: 16px;
+    color: #D9D9D9;
     width: 84px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 24px;
     /* padding-top: 26px; */
+    opacity: 50%;
 }
 
-.accordion-business-planning{
-    padding-top: 44px;
+.accordion-content{
+    padding-top: 48px;
 }
 
-.accordion-business-planning h1{
+.accordion-content h1{
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     font-size: 32px;
     line-height: 100%;
-    letter-spacing: -2%;
+    letter-spacing: -2px;
     padding-top: 16px;
 }
 
@@ -151,8 +151,191 @@ input{
     height: 40px;
     background-color: #ffffff;
     border-radius: 50%;
+    margin-top: 8px;
 }
    
 .accordion-circles img{
-    padding: 8px;
+    padding: 7px;
+}
+
+.padding-button{
+    padding-bottom: 100px;
+}
+
+.color-blue{
+    color: #3582E5 !important;
+}
+
+.linebreaks{
+    display: block;
+}
+
+.margin-top{
+    margin-top: 38px;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .container{
+        padding: 150px 32px 0 32px;
+    }
+    
+    .accordion-title h1{
+        font-size: 72px;
+        line-height: 72px;
+        padding-top: 28px;
+    }
+    
+    .accordion-title h2{
+        font-size: 18px;
+        color: #3582e5;
+        width: 84px;
+        font-weight: 600;
+        line-height: 24px;
+        /* padding-top: 26px; */
+        padding-bottom: 6px;
+    }
+    
+    .title-border{
+        width: 5%;
+    }
+    
+    .accordion-text{
+        padding-top: 80px;
+    }
+    
+    .accordion-component h1{
+        color: #ffffff;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: -2px;
+        padding-top: 16px;
+    }
+    
+    .accordion-component h2{
+        font-size: 18px;
+        color: #ffffff;
+        width: 84px;
+        font-weight: 600;
+        line-height: 28px;
+        /* padding-top: 26px; */
+        padding-bottom: 6px;
+    }
+    
+    .accordion-border{
+        border-bottom: 1px solid #D9D9D9;
+        width: 7%;
+    }
+    
+    .accordion-component p{
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 32px;
+        line-height: 21px;
+        color: #666666;
+        margin-bottom: 40px;
+    }
+    
+    .accordion-button{
+        padding: 12px 20px;
+        background-color: #FFFF;
+        text-align: center;
+        color: #000000;
+        border: 0;
+    }
+    
+    .accordion-button a{
+        color: #000000;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    
+    .accordion-component{
+        padding-bottom: 24px;
+    }
+    
+    .accordion-image img{
+        width: 100%;
+        height: 25em;
+        object-fit: cover;
+        /* margin: 0 0 18px 22px; */
+        margin-top: 20px;
+    }
+    
+    .accordion-circle{
+        width: 40px;
+        height: 40px;
+        background-color: #3582E5;
+        border-radius: 50%;
+        margin-top: 8px;
+    }
+    
+    .accordion-icon{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .accordion-circle img{
+        padding: 8px;
+    }
+    
+    input{
+        transform: translateX(13.3em);
+        display: none;
+    }
+    
+    .accordion-content h2{
+        font-size: 16px;
+        color: #D9D9D9;
+        width: 84px;
+        font-weight: 500;
+        line-height: 24px;
+        /* padding-top: 26px; */
+        opacity: 50%;
+    }
+    
+    .accordion-content{
+        padding-top: 48px;
+    }
+    
+    .accordion-content h1{
+        color: #ffffff;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: -2px;
+        padding-top: 16px;
+    }
+    
+    .accordion-circles{
+        width: 40px;
+        height: 40px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        margin-top: 8px;
+    }
+       
+    .accordion-circles img{
+        padding: 7px;
+    }
+    
+    .padding-button{
+        padding-bottom: 100px;
+    }
+    
+    .color-blue{
+        color: #3582E5 !important;
+    }
+    
+    .linebreaks{
+        display: block;
+    }
+    
+    .margin-top{
+        margin-top: 38px;
+    }
 }
