@@ -280,7 +280,7 @@ input{
     }
     
     .linebreaks{
-        display: contents;
+        display: block;
     }
 }
 
