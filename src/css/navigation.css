@@ -256,6 +256,10 @@ a{
     .menu{
         gap: 46px;
     }
+
+    .hero-text h1 {
+        font-size: 115px !important;
+    }
 }
 @media screen and (min-width:1440px) and (max-width: 1440px) {
     .navigation-item{
@@ -264,19 +268,29 @@ a{
 
     .menu{
         gap: 44px !important;
-        margin-top: 16px !important;
+        /* margin-top: 16px !important; */
     }
 }
 
 @media screen and (min-width:1680px) and (max-width: 1680px) {
    .menu{    
         /* line-height: 1em !important; */
-        gap: 60px !important;
+        gap: 65px !important;
         margin-top: 16px !important;
     }
 
     .fa-angle-down{
         top: 14% !important;
+        padding-left: 3.4em  !important;
+        transform: translateY(-27px)  !important;
+    }
+
+    .menu-items{
+        font-size: 18px !important;
+    }
+
+    .button a{
+        font-size: 16px !important;
     }
 }
 
@@ -309,14 +323,14 @@ a{
         margin-top: 12px;
         flex-direction: row;
         line-height: 2em;
-        gap: 116px;
+        gap: 77px;
         transition: all 0s ease-in-out;
     }
 
     .button a{
         margin: 0;
         padding: 16px 32px;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: bold;
     }
 
@@ -332,15 +346,15 @@ a{
         /* position: relative; */
         padding-top: 14px;
         padding-left: 10px;
-        font-size: 16px;
+        font-size: 24px;
     }
 
     .fa-angle-down{
         color: white;
         cursor: pointer;
-        font-size: 20px;
+        font-size: 27px;
         display: block;
-        padding-left: 4em;
-        transform: translateY(-24px);
+        padding-left: 4.6em;
+        transform: translateY(-30px);
     }
 }
