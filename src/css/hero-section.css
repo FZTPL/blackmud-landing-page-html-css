@@ -105,6 +105,17 @@
     }
   }
 
+  @media screen and (min-width:1680px) and (max-width: 1680px) {
+    .hero-text h1{
+      font-size: 138px !important;
+      line-height: 114px !important;
+    }
+
+    .hero-text p{
+      font-size: 16px !important;
+      line-height: 24px !important;
+    }
+  }
 @media screen and (min-width:1024px) and (max-width:1810px){
   .hero-text > h1{
     padding-top: 120px;
@@ -112,8 +123,6 @@
     transform: translateX(14px);
     width: 148%;
     /* margin-left: 64px; */
-    font-size: 138px !important;
-    line-height: 114px !important;
     letter-spacing: -5.4px;
   }
 
@@ -151,8 +160,6 @@
     margin-left: 24px;
     margin-top: 88px;
     color: #868686 ;
-    font-size: 16px !important;
-    line-height: 24px !important;
     margin-bottom: 48px;
     letter-spacing: 0;
    }
