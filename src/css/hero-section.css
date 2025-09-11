@@ -199,6 +199,7 @@
 @media screen and (min-width:1280px) and (max-width: 1280px) {
   .hero-text h1{
     font-size: 108px !important;
+    line-height: 98px;
   }
 }
 
