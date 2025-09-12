@@ -50,12 +50,13 @@
 
 .accordion-component h2{
     font-size: 16px;
-    color: #ffffff;
+    color: #D9D9D9;
     width: 84px;
     font-weight: 600;
     line-height: 24px;
     /* padding-top: 26px; */
     padding-bottom: 6px;
+    opacity: 50%;
 }
 
 .accordion-border{
@@ -63,7 +64,7 @@
     width: 7%;
 }
 
-.accordion-component p{
+.height p{
     font-size: 14px;
     font-weight: 400;
     margin-top: 32px;
@@ -89,7 +90,7 @@
 }
 
 .accordion-component{
-    padding-bottom: 24px;
+    /* padding-bottom: 24px; */
 }
 
 .accordion-image img{
@@ -103,7 +104,7 @@
 .accordion-circle{
     width: 40px;
     height: 40px;
-    background-color: #3582E5;
+    background-color: #ffffff;
     border-radius: 50%;
     margin-top: 8px;
 }
@@ -118,22 +119,26 @@
 }
 
 input{
-    transform: translateX(13.3em);
-    display: none;
+    /* transform: translateX(13.3em); */
+    /* transform: translate(28.3em, -2em); */
+    /* transform: translate(22.7em, -2em); */
+    margin-left: 92%;
+    transform: translateY(-28px);
+    appearance: none;
+    border: 10px solid transparent;
 }
 
 .accordion-content h2{
     font-size: 16px;
-    color: #D9D9D9;
+    color: #666666;
     width: 84px;
     font-weight: 500;
     line-height: 24px;
     /* padding-top: 26px; */
-    opacity: 50%;
 }
 
 .accordion-content{
-    padding-top: 48px;
+    padding-top: 32px;
 }
 
 .accordion-content h1{
@@ -155,16 +160,16 @@ input{
 }
    
 .accordion-circles img{
-    padding: 7px;
+    padding: 8px;
 }
 
 .padding-button{
     padding-bottom: 100px;
 }
 
-.color-blue{
+/* .color-blue{
     color: #3582E5 !important;
-}
+} */
 
 .linebreaks{
     display: block;
@@ -180,6 +185,104 @@ input{
 
 .accordion-image .accordion-circle{
     display: none;
+}
+
+.height{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+#accordion:checked  ~ .height{
+    max-height: 100vh;
+}
+
+#accordion1:checked  ~ .height{
+    max-height: 100vh;
+}
+
+#accordion2:checked  ~ .height{
+    max-height: 100vh;
+}
+
+#accordion3:checked  ~ .height{
+    max-height: 100vh;
+}
+
+.accordion-component:has(#accordion:checked) h1 {
+    color:#3582E5;
+    /* transition: color 0.5s linear; */
+}
+
+.accordion-component:has(#accordion:checked) .accordion-circle {
+    background-color:#3582E5;
+    /* transition: background-color 0.5s linear; */
+}
+
+.accordion-content:has(#accordion1:checked) .business{
+    color:#3582E5;
+    /* transition: color 0.5s linear; */
+}
+
+.accordion-content:has(#accordion1:checked) .businesss {
+    background-color:#3582E5;
+    /* transition: background-color 0.5s linear; */
+}
+
+.accordion-content:has(#accordion2:checked) .invest {
+    color:#3582E5;
+    /* transition: color 0.5s linear; */
+}
+
+.accordion-content:has(#accordion2:checked) .investt {
+    background-color:#3582E5;
+    /* transition: background-color 0.5s linear; */
+}
+
+.accordion-content:has(#accordion3:checked) .retire {
+    color:#3582E5;
+    /* transition: color 0.5s linear; */
+}
+
+.accordion-content:has(#accordion3:checked) .retiree {
+    background-color:#3582E5;
+    /* transition: background-color 0.5s linear; */
+}
+.common{
+    transform: translateY(-43px);
+    opacity: 0;
+}
+
+.accordion-component:has(#accordion:checked) .plus {
+    opacity: 0;
+}
+
+.accordion-component:has(#accordion:checked) .minus {
+    opacity: 1;
+}
+
+.accordion-content:has(#accordion1:checked) .business-plus {
+    opacity: 0;
+}
+
+.accordion-content:has(#accordion1:checked) .business-minus {
+    opacity: 1;
+}
+
+.accordion-content:has(#accordion2:checked) .invest-plus {
+    opacity: 0;
+}
+
+.accordion-content:has(#accordion2:checked) .invest-minus {
+    opacity: 1;
+}
+
+.accordion-content:has(#accordion3:checked) .retire-plus {
+    opacity: 0;
+}
+
+.accordion-content:has(#accordion3:checked) .retire-minus {
+    opacity: 1;
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
@@ -239,9 +342,9 @@ input{
         padding: 14px 24px;
     }
     
-    .accordion-component{
+    /* .accordion-component{
         padding-bottom: 28px;
-    }
+    } */
 
     .accordion-circle{
         width: 50px;
@@ -253,8 +356,7 @@ input{
     }
     
     input{
-        transform: translateX(13.3em);
-        display: none;
+        transform: translate(50.3em, -3em);
     }
     
     .accordion-content h2{
@@ -262,9 +364,9 @@ input{
         line-height: 26px;
     }
     
-    .accordion-content{
+    /* .accordion-content{
         padding-top: 72px;
-    }
+    } */
     
     .accordion-circles{
         width: 50px;
@@ -281,6 +383,42 @@ input{
     
     .linebreaks{
         display: block;
+    }
+    .height{
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+    }
+    
+    #accordion:checked  ~ .height{
+        max-height: 100vh;
+    }
+    
+    #accordion1:checked  ~ .height{
+        max-height: 100vh;
+    }
+    
+    .accordion-component:has(#accordion:checked) h1 {
+        color:#3582E5;
+        /* transition: color 0.5s linear; */
+    }
+    
+    .accordion-component:has(#accordion:checked) .accordion-circle {
+        background-color:#3582E5;
+        /* transition: background-color 0.5s linear; */
+    }
+    
+    .minus{
+        transform: translateY(-54px);
+        opacity: 0;
+    }
+    
+    .accordion-component:has(#accordion:checked) .plus {
+        opacity: 0;
+    }
+    
+    .accordion-component:has(#accordion:checked) .minus {
+        opacity: 1;
     }
 }
 
