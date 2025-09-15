@@ -126,6 +126,7 @@ input{
     transform: translateY(-28px);
     appearance: none;
     border: 10px solid transparent;
+    display: block;
 }
 
 .accordion-content h2{
@@ -251,6 +252,12 @@ input{
 .common{
     transform: translateY(-43px);
     opacity: 0;
+    padding: 3px !important;
+    margin: 2px 0 0 10px;
+}
+
+.minus{
+    margin: 10px 0 0 10px;
 }
 
 .accordion-component:has(#accordion:checked) .plus {
@@ -357,6 +364,7 @@ input{
     
     input{
         transform: translate(50.3em, -3em);
+        margin-left: 0%;
     }
     
     .accordion-content h2{
