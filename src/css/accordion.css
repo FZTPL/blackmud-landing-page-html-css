@@ -7,7 +7,7 @@
 
 .container{
     background-color: #000000;
-    padding: 100px 16px 0 16px;
+    padding: 100px 24px 0 24px;
 }
 
 .accordion-title h1{
@@ -253,11 +253,23 @@ input{
     transform: translateY(-43px);
     opacity: 0;
     padding: 3px !important;
-    margin: 2px 0 0 10px;
+    margin: 5px 0 0 5px;
 }
 
 .minus{
-    margin: 10px 0 0 10px;
+    transform: translateY(-43px);
+    opacity: 0;
+    /* margin: 11px 0 0 10px; */
+    padding: 3px !important;
+    margin: 4px 0 0 6px;
+}
+
+.accordion-component:has(#accordion:checked) .plus {
+    opacity: 0;
+}
+
+.accordion-component:has(#accordion:checked) .minus {
+    opacity: 1;
 }
 
 .accordion-component:has(#accordion:checked) .plus {
@@ -294,7 +306,7 @@ input{
 
 @media screen and (min-width:768px) and (max-width:1024px) {
     .container{
-        padding: 150px 32px 0 32px;
+        padding: 150px 64px 0 64px;
     }
     
     .accordion-title h1{
@@ -319,6 +331,10 @@ input{
     
     .accordion-text{
         padding-top: 80px;
+    }
+
+    .common{
+        margin: 3px 0 0 11px !important;
     }
     
     .accordion-component h1{
@@ -364,7 +380,7 @@ input{
     
     input{
         transform: translate(50.3em, -3em);
-        margin-left: 0%;
+        margin-left: 22%;
     }
     
     .accordion-content h2{
@@ -419,6 +435,8 @@ input{
     .minus{
         transform: translateY(-54px);
         opacity: 0;
+        margin: 11px 0 0 10px;
+        padding: 3px !important;
     }
     
     .accordion-component:has(#accordion:checked) .plus {
@@ -545,7 +563,7 @@ input{
     
     input{
         transform: translate(41.3em, -4em);
-        display: none;
+        /* display: none; */
         z-index: 1;
     }
     
@@ -628,23 +646,28 @@ input{
 
 @media screen and (min-width:1650px) and (max-width:1700px){
     .accordion-image .accordion-circle {
-        transform: translate(44.4em, -0.4em) !important;    
+        transform: translate(51.6em, -27.4em) !important;     
     } 
 }
 
 @media screen and (min-width:1441px){
     .accordion-text{
-        padding-top: 80px;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
+        padding-top: 120px; /* merged both padding-top rules */
     }
+
+    .height{
+        display: grid !important;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 32px; /* added spacing */
+    }
+
     .accordion-component{
         padding-bottom: 28px;
-        grid-column: 1/6;
+        grid-column: 1 / 7; /* takes first 6 cols */
     }
 
     .linebreaks{
-        display: contents;
+        display: block;
     }
 
     .linebreak{
@@ -652,7 +675,11 @@ input{
     }
 
     .accordion-image{
-        grid-column: 7/11;
+        grid-column: 6 / 11; /* spans last 6 cols */
+        display: block; /* was none, now visible */
+        background-image: url(../image/accordion.png);
+        background-size: cover;
+        background-position: center;
     }
 
     .container{
@@ -675,10 +702,6 @@ input{
     
     .title-border{
         width: 40px;
-    }
-    
-    .accordion-text{
-        padding-top: 120px;
     }
     
     .accordion-component h1{
@@ -715,40 +738,38 @@ input{
         letter-spacing: 2.4px;
     }
     
-    .accordion-component{
-        padding-bottom: 207px;
-    }
-    
     .accordion-image img{
         height: auto;
         margin-top: 0;
-        display: none;
     }
     
     .accordion-circle{
         width: 64px;
         height: 64px;
-        background-color: #3582E5;
+        background-color: #ffffff;
         border-radius: 50%;
         margin-top: 8px;
-        /* grid-column-start: 12; */
-        /* display: block !important; */
+        display: block;
     }
     
+    /* .display{
+        display: block;
+    } */
+
     .accordion-icon{
         display: flex;
         justify-content: space-between;
     }
     
     .accordion-circle img{
-        padding: 8px;
+        padding: 19px;
         display: block;
     }
     
     input{
         transform: translate(41.3em, -4em);
-        display: none;
         z-index: 1;
+        margin-left: 62%;
     }
     
     .accordion-content h2{
@@ -774,50 +795,44 @@ input{
         height: 64px;
         background-color: #ffffff;
         border-radius: 50%;
-        margin-top: 8px;
+        margin-top: 22px;
     }
        
     .accordion-circles img{
         padding: 0px;
-        width: 24px;
-        height: 24px;
-        margin: 19px 0 0 19px;
+        width: 30px;
+        height: 30px;
+        margin: 16px 0 0 17px;
     }
     
     .padding-button{
         padding-bottom: 100px;
     }
     
-    .color-blue{
-        color: #3582E5 !important;
-    }
-    
-    .linebreaks{
-        display: block;
-    }
-    
     .margin-top{
-        margin-top: 38px;
-    }
-    
-    .accordion-image{
-        /* display: flex;
-        gap: 104px; */
-        /* grid-template-columns: repeat(4, 1fr); */
-        background-image: url(../image/accordion.png);
-        background-size: cover;
-        background-position-x: center;
-    }
-
-    .accordion-component .accordion-circle{
-        display: none;
+        margin-top: 85px;
     }
 
     .accordion-image .accordion-circle {
         transform: translate(52em, -0.4em);
+        /* display: block; */
     }
 
-    .accordion-image .accordion-circle {
-        display: block;
+    .minus{
+        transform: translateY(-43px);
+        padding: 0 12px !important;
+        opacity: 0;
+    }
+    
+    .accordion-component:has(#accordion:checked) .minus {
+        opacity: 1;
+    }
+
+    .common{
+        margin: 13px 0 0 17px !important;
+    }
+
+    .try{
+        grid-column: 1 / 6;
     }
 }

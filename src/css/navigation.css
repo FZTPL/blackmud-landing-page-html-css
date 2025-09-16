@@ -44,7 +44,7 @@
     top: 10px;
 }
 
-input{
+.hamburger{
     position: relative;
     display: none;
     z-index: 1;
