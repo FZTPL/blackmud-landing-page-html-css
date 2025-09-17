@@ -38,6 +38,10 @@
     padding-top: 60px;
 }
 
+.displays{
+    display: none;
+}
+
 .accordion-component h1{
     color: #ffffff;
     font-weight: 400;
@@ -379,8 +383,8 @@ input{
     }
     
     input{
-        transform: translate(50.3em, -3em);
-        margin-left: 22%;
+        transform: translate(45.3em, -2em);
+        margin-left: 8%;
     }
     
     .accordion-content h2{
@@ -448,19 +452,28 @@ input{
     }
 }
 
-@media screen and (min-width:1024.1px) and (max-width:1440px){
-    .accordion-text{
-        padding-top: 80px;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
+@media screen and (min-width:1024px) and (max-width:1024px) {
+    input {
+        transform: translate(45.3em, -2em) !important;
+        margin-left: 29% !important;
     }
+}
+
+@media screen and (min-width:1024.1px) and (max-width:1440px) {
+    .accordion-text{
+        padding-top: 120px; /* merged both padding-top rules */
+    }
+
     .accordion-component{
+        display: grid !important;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 32px; /* added spacing */
         padding-bottom: 28px;
-        grid-column: 1/7;
+        grid-column: 1 / 7; /* takes first 6 cols */
     }
 
     .linebreaks{
-        display: contents;
+        display: block;
     }
 
     .linebreak{
@@ -468,7 +481,12 @@ input{
     }
 
     .accordion-image{
-        grid-column: 8/12;
+        grid-column: 7 / 12; /* spans last 6 cols */
+        display: block; /* was none, now visible */
+        opacity: 0;
+        grid-row: 1 / 7;
+        max-height: 0;
+        max-width: 70%;
     }
 
     .container{
@@ -493,13 +511,9 @@ input{
         width: 40px;
     }
     
-    .accordion-text{
-        padding-top: 120px;
-    }
-    
     .accordion-component h1{
         font-weight: 500;
-        font-size: 64px;
+        font-size: 56px;
         padding-top: 24px;
     }
     
@@ -531,40 +545,41 @@ input{
         letter-spacing: 2.4px;
     }
     
-    .accordion-component{
-        padding-bottom: 207px;
-    }
-    
     .accordion-image img{
-        height: auto;
+        max-height: 100%;
         margin-top: 0;
-        display: none;
+        height: 28em;
     }
     
     .accordion-circle{
         width: 64px;
         height: 64px;
-        background-color: #3582E5;
+        background-color: #ffffff;
         border-radius: 50%;
         margin-top: 8px;
-        /* grid-column-start: 12; */
-        /* display: block !important; */
+        display: block;
+        transform: translate(37em, -4.5em);
     }
     
+    .display{
+        display: none;
+    }
+
     .accordion-icon{
         display: flex;
         justify-content: space-between;
+        grid-column: 1/6;
     }
     
     .accordion-circle img{
-        padding: 8px;
+        padding: 19px;
         display: block;
     }
     
     input{
-        transform: translate(41.3em, -4em);
-        /* display: none; */
+        transform: translate(44.3em, 1em);
         z-index: 1;
+        margin-left: 1%;
     }
     
     .accordion-content h2{
@@ -573,15 +588,11 @@ input{
         padding-bottom: 8px;
     }
     
-    .accordion-content{
-        padding-top: 88px;
-    }
-    
     .accordion-content h1{
         color: #ffffff;
         font-weight: 500;
         font-style: normal;
-        font-size: 64px;
+        font-size: 52px;
         padding-top: 24px;
     }
     
@@ -590,53 +601,86 @@ input{
         height: 64px;
         background-color: #ffffff;
         border-radius: 50%;
-        margin-top: 8px;
+        margin-top: 22px;
     }
        
     .accordion-circles img{
         padding: 0px;
-        width: 24px;
-        height: 24px;
-        margin: 19px 0 0 19px;
+        width: 30px;
+        height: 30px;
+        margin: 16px 0 0 17px;
     }
     
     .padding-button{
         padding-bottom: 100px;
     }
     
-    .color-blue{
-        color: #3582E5 !important;
-    }
-    
-    .linebreaks{
-        display: block;
-    }
-    
     .margin-top{
-        margin-top: 38px;
+        margin-top: 85px;
+    }
+
+    .accordion-image .accordion-circle {
+        transform: translate(40em, -0.4em); /* adjusted smaller than large */
+    }
+
+    .minus{
+        transform: translateY(-43px);
+        padding: 0 12px !important;
+        opacity: 0;
+        margin: 1px 0 0 8px;
     }
     
-    .accordion-image{
-        /* display: flex;
-        gap: 104px; */
-        /* grid-template-columns: repeat(4, 1fr); */
-        background-image: url(../image/accordion.png);
-        background-size: cover;
-        background-position-x: center;
+    .accordion-component:has(#accordion:checked) .minus {
+        opacity: 1;
     }
 
-    .accordion-component .accordion-circle{
-        display: none;
+    .common{
+        margin: 13px 0 0 17px !important;
     }
 
-    .accordion-image .accordion-circle {
-        transform: translate(26em, -0.4em);    
+    .height{
+        grid-column: 1 / 6;
     }
 
-    .accordion-image .accordion-circle {
-        display: block;
+    .accordion-component:has(#accordion:checked) .accordion-image {
+        opacity: 1;
+        max-height: 100%;
+    }      
+
+    .accordion-content{
+        display: grid !important;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 32px;
+    }
+
+    .accordion-content:has(#accordion1:checked) .accordion-image,
+    .accordion-content:has(#accordion2:checked) .accordion-image,
+    .accordion-content:has(#accordion3:checked) .accordion-image {
+        opacity: 1;
+        max-height: 100vh;
+    } 
+
+    .accordion-content:has(#accordion1:checked) .accordion-circle,
+    .accordion-content:has(#accordion2:checked) .accordion-circle,
+    .accordion-content:has(#accordion3:checked) .accordion-circle,
+    .accordion-component:has(#accordion:checked) .accordion-circle {
+        background-color:#3582E5;
+        transform: translate(37em, -8em);
+    }
+
+    .accordion-content:has(#accordion1:checked) .minus,
+    .accordion-content:has(#accordion2:checked) .minus,
+    .accordion-content:has(#accordion3:checked) .minus {
+        opacity: 1;
+    }
+
+    .accordion-content:has(#accordion1:checked) .plus,
+    .accordion-content:has(#accordion2:checked) .plus,
+    .accordion-content:has(#accordion3:checked) .plus {
+        opacity: 0;
     }
 }
+
 
 @media screen and (min-width:1430px) and (max-width:1440px){
     .accordion-image .accordion-circle {
@@ -655,7 +699,7 @@ input{
         padding-top: 120px; /* merged both padding-top rules */
     }
 
-    .height{
+    .accordion-component{
         display: grid !important;
         grid-template-columns: repeat(12, 1fr);
         column-gap: 32px; /* added spacing */
@@ -677,9 +721,13 @@ input{
     .accordion-image{
         grid-column: 6 / 11; /* spans last 6 cols */
         display: block; /* was none, now visible */
-        background-image: url(../image/accordion.png);
+        /* background-image: url(../image/accordion.png);
         background-size: cover;
-        background-position: center;
+        background-position: center; */
+        opacity: 0;
+        grid-row: 1 / 7;
+        max-height: 0;
+        max-width: 70%;
     }
 
     .container{
@@ -739,8 +787,9 @@ input{
     }
     
     .accordion-image img{
-        height: auto;
+        max-height: 100%;
         margin-top: 0;
+        height: 28em;
     }
     
     .accordion-circle{
@@ -750,15 +799,17 @@ input{
         border-radius: 50%;
         margin-top: 8px;
         display: block;
+        transform: translate(10em, -4.5em);
     }
     
-    /* .display{
-        display: block;
-    } */
+    .display{
+        display: none;
+    }
 
     .accordion-icon{
         display: flex;
         justify-content: space-between;
+        grid-column: 1/6;
     }
     
     .accordion-circle img{
@@ -767,9 +818,9 @@ input{
     }
     
     input{
-        transform: translate(41.3em, -4em);
+        transform: translate(10.3em, 1em);
         z-index: 1;
-        margin-left: 62%;
+        margin-left: 1%;
     }
     
     .accordion-content h2{
@@ -778,9 +829,9 @@ input{
         padding-bottom: 8px;
     }
     
-    .accordion-content{
+    /* .accordion-content{
         padding-top: 88px;
-    }
+    } */
     
     .accordion-content h1{
         color: #ffffff;
@@ -822,6 +873,7 @@ input{
         transform: translateY(-43px);
         padding: 0 12px !important;
         opacity: 0;
+        margin: 1px 0 0 8px;
     }
     
     .accordion-component:has(#accordion:checked) .minus {
@@ -832,7 +884,87 @@ input{
         margin: 13px 0 0 17px !important;
     }
 
-    .try{
+    .height{
         grid-column: 1 / 6;
+    }
+
+    .accordion-component:has(#accordion:checked) .accordion-image {
+        opacity: 1;
+        max-height: 100%;
+      }      
+
+    .accordion-content{
+        display: grid !important;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 32px; /* added spacing */
+      }
+
+      .accordion-content:has(#accordion1:checked) .accordion-image {
+        opacity: 1;
+        max-height: 100vh;
+      } 
+
+      .accordion-content:has(#accordion1:checked) .accordion-circle {
+        background-color:#3582E5;
+        transform: translate(10em, -10.5em);
+    }
+
+    .accordion-component:has(#accordion:checked) .accordion-circle {
+        background-color:#3582E5;
+        transform: translate(10em, -9em);
+    }
+
+    .accordion-content:has(#accordion2:checked) .accordion-image {
+        opacity: 1;
+        max-height: 100vh;
+      } 
+
+      .accordion-content:has(#accordion2:checked) .accordion-circle {
+        background-color:#3582E5;
+        transform: translate(10em, -10.5em);
+    }
+
+    .accordion-content:has(#accordion2:checked) .accordion-circle {
+        background-color:#3582E5;
+        transform: translate(10em, -9em);
+    }
+    
+    .accordion-content:has(#accordion2:checked) .minus {
+        opacity: 1;
+    }
+
+    .accordion-content:has(#accordion2:checked) .plus {
+        opacity: 0;
+    }
+
+    .accordion-content:has(#accordion1:checked) .minus {
+        opacity: 1;
+    }
+
+    .accordion-content:has(#accordion1:checked) .plus {
+        opacity: 0;
+    }
+
+    .accordion-content:has(#accordion3:checked) .accordion-image {
+        opacity: 1;
+        max-height: 100vh;
+      } 
+
+      .accordion-content:has(#accordion3:checked) .accordion-circle {
+        background-color:#3582E5;
+        transform: translate(10em, -10.5em);
+    }
+
+    .accordion-content:has(#accordion3:checked) .accordion-circle {
+        background-color:#3582E5;
+        transform: translate(10em, -9em);
+    }
+    
+    .accordion-content:has(#accordion3:checked) .minus {
+        opacity: 1;
+    }
+
+    .accordion-content:has(#accordion3:checked) .plus {
+        opacity: 0;
     }
 }

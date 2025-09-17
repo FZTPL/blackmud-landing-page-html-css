@@ -58,7 +58,7 @@
   margin-top: 20px;
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width:768px) and (max-width:1024px) {
 
   /* .hero{
     height: 66vh;
@@ -95,7 +95,7 @@
       width: 284px;
     }
 }
-  @media screen and (min-width:1024px) and (max-width:1024px) {
+  /* @media screen and (min-width:1024px) and (max-width:1024px) {
     .hero-text h1{
       font-size: 89px !important;
       line-height: 84px !important;
@@ -105,7 +105,7 @@
       font-size: 13px !important;
       line-height: 20px !important;
     }
-  }
+  } */
 
   @media screen and (min-width:1680px) and (max-width: 1680px) {
     .hero-text h1{
@@ -118,9 +118,9 @@
       line-height: 24px !important;
     }
   }
-@media screen and (min-width:1024px) and (max-width:1810px){
+@media screen and (min-width:1024.1px) and (max-width:1810px){
   .hero-text > h1{
-    padding-top: 120px;
+    padding-top: 76px;
     /* font-size: 98px; */
     transform: translateX(14px);
     width: 148%;
@@ -160,7 +160,7 @@
 
   .hero-text p{
     margin-left: 24px;
-    margin-top: 88px;
+    margin-top: 58px;
     color: #868686 ;
     margin-bottom: 48px;
     letter-spacing: 0;
@@ -181,16 +181,21 @@
 @media screen and (min-width:1340px) and (max-width: 1440px) {
   .hero-text h1{
     font-size: 120px !important;
+    line-height: 100px  !important;
   }
 
   .hero-text p{
     font-size: 18px !important;
   }
+
+  .hero{
+    height: 830px;
+  }
 }
 
 @media screen and (min-width:1600px) and (max-width: 1700px) {
   .hero{
-    height: 912px !important;
+    height: 840px !important;
   }
 
   .hero-text p{
@@ -257,7 +262,7 @@
 
   .hero-text p{
     margin-left: 24px;
-    margin-top: 88px;
+    margin-top: 80px;
     color: #868686 ;
     font-size: 23px;
     line-height: 34px;
@@ -267,7 +272,7 @@
 
   .hero-button{
     margin-left: 24px;
-    margin-top: 48px;
+    margin-top: 38px;
     padding: 16px 32px;
   }
 
