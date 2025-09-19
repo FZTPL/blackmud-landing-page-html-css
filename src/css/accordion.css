@@ -73,7 +73,7 @@
     font-weight: 400;
     margin-top: 32px;
     line-height: 21px;
-    color: #666666;
+    color: #868686;
     margin-bottom: 40px;
 }
 
@@ -384,7 +384,7 @@ input{
     
     input{
         transform: translate(45.3em, -2em);
-        margin-left: 8%;
+        margin-left: 0%;
     }
     
     .accordion-content h2{

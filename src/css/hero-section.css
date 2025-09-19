@@ -14,7 +14,7 @@
 }
 
 .hero-text{
-  margin: 0 24px 24px; 
+  margin: 0 24px 0 24px; 
 }
 
 .hero-text > p{
@@ -42,10 +42,11 @@
   background-color:#3582E5;
   text-align: center;
   border: 0;
+  margin-bottom: 40px;
 }
 
 .hero-text > h1{
-  padding-top: 48px;
+  /* padding-top: 48px; */
   font-size: 50px;
   line-height: 50px;
 }
@@ -64,26 +65,21 @@
     height: 66vh;
   } */
 
-  .hero-text > p{
-      margin-top: 64px;
-      line-height: 30px;
-  }
-
   .hero-button > a{
       font-size: 18px;
-      padding-left: 32px;
+      /* padding-left: 32px; */
   }
 
   .hero-text > h1{
       padding-top: 80px;
-      font-size: 94px;
-      line-height: 94px;
+      font-size: 77px;
+      line-height: 74px;
     }
 
     .hero-text > p{
-      font-size: 18px;
+      font-size: 16px;
       margin-top: 64px;
-      line-height: 30px;
+      line-height: 24px;
     }
 
     .hero-image > img{
@@ -92,7 +88,7 @@
     }
 
     .hero-button{
-      width: 284px;
+      padding: 24px 50px;
     }
 }
   /* @media screen and (min-width:1024px) and (max-width:1024px) {
@@ -250,6 +246,7 @@
     width: 40%;
     margin-bottom: 60px;
     margin-left: 47px;
+    order: 1;
   }
 
   .hero-image{
@@ -258,6 +255,7 @@
     background-image: url(../image/city.jpeg);
     background-position: right center;
     background-size: cover;
+    order: 2;
   }
 
   .hero-text p{
