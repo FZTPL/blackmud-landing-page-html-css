@@ -220,15 +220,15 @@
     background-image: none;
     max-width: none;
     margin: 0;
-    height: 990px;
+    height: 886px;
   }
 
   .hero-text > h1{
-    padding-top: 120px;
+    padding-top: 86px;
     transform: translateX(14px);
     width: 148%;
     font-size: 156px;
-    line-height: 154px;
+    line-height: 142px;
     letter-spacing: -5.4px;
   }
 
