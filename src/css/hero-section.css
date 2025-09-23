@@ -1,3 +1,4 @@
+/* -------------------- RESET -------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -5,30 +6,38 @@
   font-family: 'Inter';
 }
 
-.hero{
+/* -------------------- BASE HERO -------------------- */
+.hero {
   background-color: #000;
   color: white;
-  /* background-image: url(/src/image/city.jpeg);
-  background-size: cover;
-  height: 52vh; */
 }
 
-.hero-text{
-  margin: 0 24px 0 24px; 
+.hero-text {
+  margin: 0 24px;
 }
 
-.hero-text > p{
+.hero-text > h1 {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.hero-text > p {
   font-size: 14px;
   font-weight: 500;
-  /* color: #ffff; */
-  margin-top: 32px;
+  margin: 32px 0 34px 0;
   line-height: 20px;
-  /* margin-bottom: 20px; */
-  margin-bottom: 34px;
   color: #868686;
 }
 
-.hero-button > a{
+.hero-button {
+  padding: 18px 42px;
+  background-color: #3582E5;
+  text-align: center;
+  border: 0;
+  margin-bottom: 40px;
+}
+
+.hero-button > a {
   color: #ffff;
   text-decoration: none;
   font-size: 16px;
@@ -36,194 +45,143 @@
   letter-spacing: 3px;
 }
 
-.hero-button{
-  /* width: 233px; */
-  padding: 18px 42px;
-  background-color:#3582E5;
-  text-align: center;
-  border: 0;
-  margin-bottom: 40px;
-}
-
-.hero-text > h1{
-  /* padding-top: 48px; */
-  font-size: 50px;
-  line-height: 50px;
-}
-
-.hero-image > img{
+.hero-image > img {
   width: 89%;
   height: 25em;
   object-fit: cover;
-  margin: 0 0 18px 22px;
-  margin-top: 20px;
+  margin: 20px 0 18px 22px;
 }
 
+/* -------------------- MEDIA QUERIES -------------------- */
+
+/* Tablet (768px - 1024px) */
 @media screen and (min-width:768px) and (max-width:1024px) {
-
-  /* .hero{
-    height: 66vh;
-  } */
-
-  .hero-button > a{
-      font-size: 18px;
-      /* padding-left: 32px; */
+  .hero-text > h1 {
+    padding-top: 80px;
+    font-size: 77px;
+    line-height: 74px;
   }
 
-  .hero-text > h1{
-      padding-top: 80px;
-      font-size: 77px;
-      line-height: 74px;
-    }
+  .hero-text > p {
+    font-size: 16px;
+    margin-top: 64px;
+    line-height: 24px;
+  }
 
-    .hero-text > p{
-      font-size: 16px;
-      margin-top: 64px;
-      line-height: 24px;
-    }
+  .hero-button {
+    padding: 24px 50px;
+  }
 
-    .hero-image > img{
-      width: 94%;
-      height: 34em;;
-    }
+  .hero-button > a {
+    font-size: 18px;
+  }
 
-    .hero-button{
-      padding: 24px 50px;
-    }
+  .hero-image > img {
+    width: 94%;
+    height: 34em;
+  }
 }
-  /* @media screen and (min-width:1024px) and (max-width:1024px) {
-    .hero-text h1{
-      font-size: 89px !important;
-      line-height: 84px !important;
-    }
 
-    .hero-text p{
-      font-size: 13px !important;
-      line-height: 20px !important;
-    }
-  } */
-
-  @media screen and (min-width:1680px) and (max-width: 1680px) {
-    .hero-text h1{
-      font-size: 138px !important;
-      line-height: 114px !important;
-    }
-
-    .hero-text p{
-      font-size: 16px !important;
-      line-height: 24px !important;
-    }
-  }
-@media screen and (min-width:1024.1px) and (max-width:1810px){
-  .hero-text > h1{
-    padding-top: 76px;
-    /* font-size: 98px; */
-    transform: translateX(14px);
-    width: 148%;
-    /* margin-left: 64px; */
-    letter-spacing: -5.4px;
-  }
-
-  .hero{
+/* 1024.1px - 1810px */
+@media screen and (min-width:1024.1px) and (max-width:1810px) {
+  .hero {
     display: flex;
     max-width: 1450px;
-    /* height: 914px; */
     margin: auto;
     background-image: none;
   }
 
-  .hero-image > img{
-    /* width: auto;
-    height: auto;
-    object-fit: cover;
-    margin: 0; */
-    display: none;
-  }
-
-  .hero-text{
+  .hero-text {
     width: 40%;
     margin-bottom: 60px;
     margin-left: 47px;
+    order: 1;
   }
 
-  .hero-image{
-    width: 60%;
-    /* margin-left: 64px; */
-    background-image: url(../image/city.jpeg);
-    background-position: right center;
-    background-size: cover;
+  .hero-text > h1 {
+    padding-top: 76px;
+    transform: translateX(14px);
+    width: 148%;
+    letter-spacing: -5.4px;
   }
 
-  .hero-text p{
+  .hero-text > p {
     margin-left: 24px;
     margin-top: 58px;
-    color: #868686 ;
     margin-bottom: 48px;
     letter-spacing: 0;
-   }
+  }
 
-  .hero-button{
+  .hero-button {
     margin-left: 24px;
     margin-top: 48px;
     padding: 16px 32px;
   }
 
-  .hero-button a{
+  .hero-button > a {
     font-size: 20px;
     line-height: 30px;
-    letter-spacing: 3px;
-  }
-}
-@media screen and (min-width:1340px) and (max-width: 1440px) {
-  .hero-text h1{
-    font-size: 120px !important;
-    line-height: 100px  !important;
   }
 
-  .hero-text p{
-    font-size: 18px !important;
+  .hero-image {
+    width: 60%;
+    background-image: url(../image/city.jpeg);
+    background-position: right center;
+    background-size: cover;
+    order: 2;
   }
 
-  .hero{
-    height: 830px;
+  .hero-image > img {
+    display: none;
   }
 }
 
-@media screen and (min-width:1600px) and (max-width: 1700px) {
-  .hero{
-    height: 840px !important;
-  }
-
-  .hero-text p{
-    font-size: 20px !important;
-  }
-}
-
-@media screen and (min-width:1280px) and (max-width: 1280px) {
-  .hero-text h1{
+/* 1280px ONLY */
+@media screen and (min-width:1280px) and (max-width:1280px) {
+  .hero-text h1 {
     font-size: 108px !important;
     line-height: 98px;
   }
 
-  .hero-text p{
+  .hero-text p {
     font-size: 16px;
   }
 }
 
-@media screen and (min-width:1441px) and (max-width:1980px){
-  .hero-button{
-    margin-top: 0;
+/* 1340px - 1440px */
+@media screen and (min-width:1340px) and (max-width:1440px) {
+  .hero {
+    height: 830px;
   }
 
-  .hero{
+  .hero-text h1 {
+    font-size: 120px !important;
+    line-height: 100px !important;
+  }
+
+  .hero-text p {
+    font-size: 18px !important;
+  }
+}
+
+/* 1441px - 1980px */
+@media screen and (min-width:1441px) and (max-width:1980px) {
+  .hero {
     display: flex;
+    margin: auto;
     background-image: none;
     max-width: none;
-    margin: 0;
     height: 886px;
   }
 
-  .hero-text > h1{
+  .hero-text {
+    width: 40%;
+    margin-bottom: 60px;
+    margin-left: 47px;
+    order: 1;
+  }
+
+  .hero-text > h1 {
     padding-top: 86px;
     transform: translateX(14px);
     width: 148%;
@@ -232,61 +190,69 @@
     letter-spacing: -5.4px;
   }
 
-  .hero{
-    display: flex;
-    margin: auto;
-    background-image: none;
+  .hero-text > p {
+    margin-left: 24px;
+    margin-top: 80px;
+    margin-bottom: 48px;
+    font-size: 23px;
+    line-height: 34px;
   }
 
-  .hero-image > img{
-    display: none;
+  .hero-button {
+    margin-left: 24px;
+    margin-top: 38px;
+    padding: 16px 32px;
   }
 
-  .hero-text{
-    width: 40%;
-    margin-bottom: 60px;
-    margin-left: 47px;
-    order: 1;
+  .hero-button > a {
+    font-size: 20px;
+    line-height: 30px;
   }
 
-  .hero-image{
+  .hero-image {
     width: 60%;
-    /* margin-left: 64px; */
     background-image: url(../image/city.jpeg);
     background-position: right center;
     background-size: cover;
     order: 2;
   }
 
-  .hero-text p{
-    margin-left: 24px;
-    margin-top: 80px;
-    color: #868686 ;
-    font-size: 23px;
-    line-height: 34px;
-    margin-bottom: 48px;
-    letter-spacing: 0;
-   }
-
-  .hero-button{
-    margin-left: 24px;
-    margin-top: 38px;
-    padding: 16px 32px;
-  }
-
-  .hero-button a{
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 3px;
+  .hero-image > img {
+    display: none;
   }
 }
 
-@media screen  and (min-width:1900px) and (max-width:1980px) {
-  .hero-button a{
-    font-size: 22px;
+/* 1600px - 1700px */
+@media screen and (min-width:1600px) and (max-width:1700px) {
+  .hero {
+    height: 840px !important;
   }
-  
-  .hero-button{
+
+  .hero-text p {
+    font-size: 20px !important;
+  }
+}
+
+/* 1680px ONLY */
+@media screen and (min-width:1680px) and (max-width:1680px) {
+  .hero-text h1 {
+    font-size: 138px !important;
+    line-height: 114px !important;
+  }
+
+  .hero-text p {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+}
+
+/* 1900px - 1980px */
+@media screen and (min-width:1900px) and (max-width:1980px) {
+  .hero-button {
     padding: 18px 36px;
+  }
+
+  .hero-button > a {
+    font-size: 22px;
   }
 }
