@@ -880,7 +880,7 @@ input {
     .accordion-content:has(#accordion2:checked) .accordion-circle,
     .accordion-content:has(#accordion3:checked) .accordion-circle {
         background-color:#3582E5;
-        transform: translate(59em, -8.4em) !important;
+        transform: translate(50em, -8.4em) !important;
     }
 
     .accordion-content:has(#accordion1:checked) .minus,
