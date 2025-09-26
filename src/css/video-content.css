@@ -1,34 +1,34 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: content-box;
-}
-
-.inter{
+  }
+  
+  .inter {
     font-family: "Inter";
-}
-
-.container{
+  }
+  
+  .container {
     padding: 1px 24px 24px;
-    background-color:#D9D9D9;
-}
-
-.border{
+    background-color: #D9D9D9;
+  }
+  
+  .border {
     border-bottom: 1px solid black;
     width: 8%;
-}
-
-.container h1{
+  }
+  
+  .container h1 {
     padding-top: 24px;
     font-size: 46px;
-    color: #000000;;
+    color: #000000;
     font-weight: 600;
     letter-spacing: -2px;
     line-height: 46px;
     padding-bottom: 26px;
-}
-
-.container h2{
+  }
+  
+  .container h2 {
     color: #3582E5;
     width: 84px;
     font-size: 14px;
@@ -36,32 +36,33 @@
     font-weight: 600;
     padding-bottom: 8px;
     line-height: 24px;
-}
-
-.card-image img{
+  }
+  
+  .card-image img {
     width: 100%;
-}
-.card-image video{
+  }
+  
+  .card-image video {
     width: 100%;
-}
-
-.card-content h5{
+  }
+  
+  .card-content h5 {
     font-size: 16px;
     line-height: 24px;
     color: #666666;
     padding: 20px 0;
     width: 84px;
-}
-
-.card-content h3{
+  }
+  
+  .card-content h3 {
     font-size: 28px;
     line-height: 33.6px;
-    color: #666666;
+    color: #000000;
     letter-spacing: -0.84px;
     padding: 20px 0;
-}
-
-.video-button > a{
+  }
+  
+  .video-button > a {
     color: #000000;
     text-decoration: none;
     font-size: 14px;
@@ -69,11 +70,120 @@
     letter-spacing: 1px;
   }
   
-  .video-button{
+  .video-button {
     padding: 12px 20px;
     background-color: #FFFF;
     text-align: center;
     color: #000000;
     border: 0;
     margin: 40px 0;
+  }
+  
+  .play-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #ffff;
+    border-radius: 50%;
+    transform: translate(5px, -52px);
+  }
+  
+  .checkplay {
+    transform: translate(19px, 15em);
+    appearance: none;
+    position: relative;
+    z-index: 1;
+    border: 6px solid transparent;
+    border-radius: 50%;
+  }
+  
+  /* Hide the video by default */
+  video {
+    display: none;
+  }
+  
+  /* When the checkbox is checked, hide the image sibling */
+  input[type="checkbox"]:checked ~ img {
+    display: none;
+  }
+  
+  /* When the checkbox is checked, show the video sibling */
+  input[type="checkbox"]:checked ~ video {
+    display: block;
+  }
+  
+  .card-image {
+    max-height: 236px;
+  }
+  
+  .card-image .playy-arrow,
+  .card-image .pused-arrow {
+    width: 14px !important;
+    transform: translate(14px, 10px) !important;
+  }  
+
+  /* Hide pause icon by default */
+.pused-arrow {
+    display: none;
+  }
+  
+  /* When checked: show pause, hide play */
+  input[type="checkbox"]:checked ~ .play-btn .playy-arrow {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked ~ .play-btn .pused-arrow {
+    display: inline-block;
+  }
+  
+  /* When checked: change play-btn color */
+  input[type="checkbox"]:checked ~ .play-btn {
+    background-color: #3582E5; /* blue */
+  }
+  
+  /* This is copyed from ai tools to hide timer,speaker and full screen */
+
+  /* This will hide the entire controls bar */
+video::-webkit-media-controls-panel {
+    display: none !important;
+  }
+  
+  /* If you want to be more specific and hide individual elements: */
+  
+  /* Hide the timeline (timer) */
+  video::-webkit-media-controls-timeline {
+    display: none;
+  }
+  
+  /* Hide the mute/unmute button */
+  video::-webkit-media-controls-mute-button {
+    display: none;
+  }
+  
+  /* Hide the volume slider (if present) */
+  video::-webkit-media-controls-volume-slider {
+    display: none;
+  }
+  
+  /* Hide the current time display */
+  video::-webkit-media-controls-current-time-display {
+    display: none;
+  }
+  
+  /* Hide the remaining time display */
+  video::-webkit-media-controls-time-remaining-display {
+    display: none;
+  }
+  
+  /* Hide the fullscreen button */
+  video::-webkit-media-controls-fullscreen-button {
+    display: none;
+  }
+  
+  /* Hide the "three dots" menu (for download, etc.) */
+  video::-webkit-media-controls-enclosure {
+      overflow: hidden;
+  }
+  
+  video::-webkit-media-controls-panel-enclosure {
+      display: none;
   }

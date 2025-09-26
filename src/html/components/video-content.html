@@ -1,62 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/video-content.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/video-content.css" />
     <title>video-content-component</title>
 </head>
+
 <body class="universal">
     <div class="container inter">
-    <div class="video-content-text">
-        <div class="border"><h2>WEBINARS</h2></div>
-            <h1>
-                Building stable financial future
-            </h1>
-    </div>
+        <div class="video-content-text">
+            <div class="border">
+                <h2>WEBINARS</h2>
+            </div>
+            <h1>Building stable financial future</h1>
+        </div>
 
-    <!-- First Card -->
-    <div class="card">
-        <div class="card-image">
-        <!-- <img src="../../image/aboutus.png" alt="Webinar Thumbnail"> -->
-            <video controls><source src="../../video/mov_bbb.mp4" type="video/mp4"></video>
-        <div class="play-btn blue"></div>
+        <!-- First Card -->
+        <div class="card">
+            <div class="card-image">
+                <input class="checkplay" type="checkbox" name="play" />
+                <img src="../../image/video-content.jpg" alt="Video placeholder" />
+                <video controls muted autoplay loop playsinline>
+                    <source src="../../video/mov_bbb.mp4" type="video/mp4" />
+                </video>
+                    <div class="play-btn">
+                        <img class="playy-arrow" src="../../image/play_arrow.png" alt="Play Button">
+                        <img class="pused-arrow" src="../../image/pused.png" alt="Pause Button">
+                    </div>
+            </div>
+            <div class="card-content">
+                <div class="border">
+                    <h5>EPS 25</h5>
+                </div>
+                <h3>Maximizing your investments: strategies for growth</h3>
+            </div>
         </div>
-        <div class="card-content">
-        <div class="border"><h5>EPS 25</h5></div>
-        <h3>Maximizing your investments: strategies for growth</h3>
-        </div>
-    </div>
 
-    <!-- Second Card -->
-    <div class="card">
-        <div class="card-image">
-        <img src="../../image/aboutus.png" alt="Webinar Thumbnail">
-        <div class="play-btn"></div>
+        <!-- Second Card -->
+        <div class="card">
+            <div class="card-image">
+                <input class="checkplay" type="checkbox" name="play" />
+                <img src="../../image/video-content.jpg" alt="Video placeholder" />
+                <video controls muted autoplay loop playsinline>
+                    <source src="../../video/mov_bbb.mp4" type="video/mp4" />
+                </video>
+                <div class="play-btn">
+                    <img class="playy-arrow" src="../../image/play_arrow.png" alt="Play Button">
+                    <img class="pused-arrow" src="../../image/pused.png" alt="Pause Button">
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="border">
+                    <h5>EPS 24</h5>
+                </div>
+                <h3>Investments strategies for a volatile market</h3>
+            </div>
         </div>
-        <div class="card-content">
-        <div class="border"><h5>EPS 24</h5></div>
-        <h3>Investments strategies for a volatile market</h3>
-        </div>
-    </div>
 
-    <!-- Third Card -->
-    <div class="card">
-        <div class="card-image">
-        <img src="../../image/aboutus.png" alt="Webinar Thumbnail">
-        <div class="play-btn"></div>
+        <!-- Third Card -->
+        <div class="card">
+            <div class="card-image">
+                <input class="checkplay" type="checkbox" name="play" />
+                <img src="../../image/video-content.jpg" alt="Video placeholder" />
+                <video controls muted autoplay loop playsinline>
+                    <source src="../../video/mov_bbb.mp4" type="video/mp4" />
+                </video>
+                <div class="play-btn">
+                    <img class="playy-arrow" src="../../image/play_arrow.png" alt="Play Button">
+                    <img class="pused-arrow" src="../../image/pused.png" alt="Pause Button">
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="border">
+                    <h5>EPS 23</h5>
+                </div>
+                <h3>Growth strategies for maximizing your investments</h3>
+            </div>
         </div>
-        <div class="card-content">
-        <div class="border"><h5>EPS 23</h5></div>
-        <h3>Growth strategies for maximizing your investments</h3>
-        </div>
-    </div>
 
-    <button class="video-button"><a href="#">LEARN MORE</a></button>
+        <button class="video-button"><a href="#">LEARN MORE</a></button>
     </div>
 </body>
 </html>
