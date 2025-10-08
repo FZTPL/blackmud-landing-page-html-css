@@ -497,13 +497,14 @@ input {
 
     .height > p{
         margin-top: 28px;
+        line-height: 16px;
     }
     
     .accordion-component p{
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         margin-top: 28px;
-        line-height: 24px;
+        line-height: 19px;
     }
     
     .accordion-button{
@@ -726,6 +727,8 @@ input {
 
     .height p{
         margin-top: 34px;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .accordion-title h1 {
