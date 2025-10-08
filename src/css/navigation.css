@@ -1,143 +1,163 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: content-box;
-}
-
-.inter{
-    font-family: "Inter";
+.inter {
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-size: 16px;
     font-weight: 400;
-}
-
-.navigation-item{
+  }
+  
+  .navigation-item {
     display: flex;
     background-color: black;
     padding: 10px 10px 8px 0;
     text-align: center;
     position: fixed;
-}
-
-.logo{
-    margin-left: 62%;
-    max-width: 50%;
-}
-
-.logo img{
     width: 100%;
-}
-
-.hamburger-bar{
-    color: white;
+    left: 0;
+    top: 0;
+    z-index: 50;
+  }
+  
+  /* logo: use flex auto margin instead of fixed percentage */
+  .logo {
+    margin-left: auto;             /* push logo to the right */
+    max-width: 220px;              /* limit width so it doesn't blow up */
+    padding-left: 12px;
+  }
+  
+  .logo img {
+    width: 96%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+  }
+  
+  /* Custom hamburger icon */
+  .hamburger-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 18px;
+    cursor: pointer;
     position: absolute;
-    font-size: 24px;
     left: 18px;
-    top: 12px;
-}
+    top: 23px;
+    z-index: 60;
+  }
+  
+  .hamburger{
+    appearance: none;
+    margin-left: 0%;
+  }
 
-.hamburger-xmark{
+  .hamburger-bar .bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+  }
+  
+  /* xmark (hidden by default) */
+  .hamburger-xmark {
     color: white;
     position: absolute;
     font-size: 26px;
     left: 18px;
-    top: 10px;
-}
-
-.hamburger{
-    position: relative;
-    display: none;
-    z-index: 1;
-}
-
-#check:checked ~ .hamburger-bar{
+    top: 17px;
+    opacity: 0;
+    z-index: 60;
+  }
+  
+  /* toggle visibility */
+  #check:checked ~ .hamburger-bar {
     visibility: hidden;
     opacity: 0;
-}
-
-#check:checked ~ .hamburger-xmark{
-   transition:  all 0.2s ease-in ;
-   opacity: 1;
-}
-
-.hamburger-xmark{
-    opacity: 0;
-}
-
-.menu-items:hover{
+  }
+  
+  #check:checked ~ .hamburger-xmark {
+    transition: all 0.2s ease-in;
+    opacity: 1;
+  }
+  
+  .menu-items:hover {
     font-weight: bold;
-}
-
-.menu{
+  }
+  
+  /* mobile menu (hidden by default using left:-100%) */
+  .menu {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 66%;
     position: fixed;
     background-color: rgb(0, 0, 0);
     list-style: none;
     line-height: 3em;
-    left: 0;
-    text-align: left;
-    margin-top: 10%;
     left: -100%;
+    text-align: left;
+    margin-top: 11.9%;
     transition: all 0.25s ease-in-out;
     height: 100%;
-}
-
-.menu-items{
+    z-index: 55;
+  }
+  
+  .menu-items {
     padding-left: 34px;
     font-size: 14px;
-}
-
-.menu-items a:active{
+  }
+  
+  .menu-items a:active {
     font-weight: bold;
-}
-
-#check:checked ~ .menu{
+  }
+  
+  /* show menu when checkbox is checked */
+  #check:checked ~ .menu {
     left: 0;
-} 
-
-a{
+  }
+  
+  a {
     color: white;
     text-decoration: none;
-}
-
-.button a{
+  }
+  
+  .button a {
     background-color: white;
     color: black;
     padding: 10px;
-}
-
-.fa-angle-down{
+  }
+  
+  .fa-angle-down {
     display: none;
-}
-
-.button{
+  }
+  
+  .button {
     margin: 8px 0 20px 34px;
     font-size: 14px;
-}
-
-.button a:hover{
+  }
+  
+  .button a:hover {
     background-color: #264300bd;
     color: aliceblue;
-}
-
-@media screen and (min-width:768px) and (max-width:1024px) {
+  }
+  
+  /* ===== Responsive adjustments ===== */
+  
+  @media screen and (min-width:768px) and (max-width:1024px) {
     .menu{
-        margin-top: 8%;
+        margin-top: 6%;
         line-height: 4em;
     }
 
     .hamburger-bar{
         font-size: 2em;
-        left: 22px;
-        top: 20px;
+        /* left: 22px;
+        top: 20px; */
     }
 
     .hamburger-xmark{
         font-size: 2em;
-        left: 24px;
-        top: 20px;
+        /* left: 24px;
+        top: 20px; */
     }
 
     .menu-items{
@@ -153,207 +173,233 @@ a{
         margin-left: 65%;
         max-width: 34%;
     }
+} 
+
+@media screen and (min-width:1024px) and (max-width:1024px) {
+  .fa-angle-down {
+    padding-left: 4em !important;
+  }
+
+  .menu-items {
+    font-size: 16px !important;
+  }
+  .menu {
+    gap: 10px !important;
+  }
+  .navigation-item {
+    gap: 12% !important;
+  }
+
+  .hero-text > h1 {
+    font-size: 89px !important;
+    line-height: 78px !important;
 }
 
-/* @media screen and (min-width:1024.1px) and (max-width: 1024px) {
-    .logo{
-        padding-left: 24px !important;
+.hero-text p {
+  margin-top: 50px !important;
+  margin-bottom: 6px !important;
+}
+}
+  
+  /* large desktop: show full menu, hide hamburger */
+  @media screen and (min-width:1024px) and (max-width:1440px) {
+    .logo {
+      max-width: 220px;
+      margin-left: 0;
+      padding-left: 64px;
+    }
+  
+    .logo img {
+      width: 250px;
+    }
+  
+    .hamburger-bar,
+    .hamburger-xmark {
+      display: none;
+    }
+  
+    .navigation-item {
+      gap: 18% ;
+      height: 74px;
+      align-items: center;
+      max-width: 1440px;
+      margin: auto;
+      position: static;
+    }
+  
+    .menu {
+      position: static;
+      margin-top: 0;
+      flex-direction: row;
+      line-height: 2em;
+      gap: 28px;
+      transition: all 0s ease-in-out;
+      height: auto;
+      margin-top: 8px;
+    }
+  
+    .button a {
+      margin: 0;
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  
+    .button {
+      margin-top: 14px;
+      cursor: pointer;
+      margin-bottom: 12px;
+      margin-left: 0;
+    }
+  
+    .menu-items {
+      padding-top: 12px;
+      padding-left: 10px;
+      font-size: 20px;
+    }
+  
+    .fa-angle-down {
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+      display: block;
+      padding-left: 5em;
+      transform: translateY(-25px);
     }
 
-    .logo img{
-        width: 12em !important;
+    .hamburger{
+        display: none;
+        appearance: auto;
+    }
+  }
+
+  @media screen and (min-width:1440px) and (max-width:1440px) {
+    .menu{
+        gap: 36px !important;
+    }
+  }
+
+  @media screen and (min-width:1280px) and (max-width:1280px) {
+    .navigation-item{
+        gap: 14% !important;
     }
 
     .menu{
         gap: 26px !important;
     }
+  }
 
-    .button{
-        margin-left: 0;
-        margin-bottom: 12px;
-    }
-
+  @media screen and (min-width:1512px) and (max-width:1512px) {
     .navigation-item{
-        gap: 6% !important;
-    }
-
-    .fa-angle-down{
-        top: 36% !important;
-    }
-
-    .hero-button{
-        padding: 18px 28px;
-    }
-} */
-@media screen and (min-width:1024.1px) and (max-width:1440px){
-    .logo{
-        max-width: 20%;
-        margin-left: 0;
-        padding-left: 64px;
-    }
-
-    .logo img{
-        width: 250px;
-    }
-
-    .hamburger-bar,.hamburger-xmark{
-        display: none;
-    }
-
-    .navigation-item{
-        gap: 14%;
-        height: 74px;
-        align-items: center;
-        max-width: 1440px;
-        margin: auto;
-        position: static;
+        gap: 16% !important;
     }
 
     .menu{
-        position: static;
-        margin-top: 0;
-        flex-direction: row;
-        line-height: 2em;
-        gap: 44px;
-        transition: all 0s ease-in-out;
+        gap: 30px !important;
+    }
+  }
+  
+  /* wider screens */
+  @media screen and (min-width:1441px) {
+    .logo {
+      max-width: 220px;
+      margin-left: 0;
+      padding-left: 64px;
+    }
+    /* and (max-width:1980px) */
+    .logo img {
+      width: 250px;
+    }
+  
+    .hamburger-bar,
+    .hamburger-xmark {
+      display: none;
+    }
+  
+    .navigation-item {
+      gap: 18%;
+      height: 90px;
+      align-items: center;
+      position: static;
+    }
+  
+    .menu {
+      position: static;
+      margin-top: 12px;
+      flex-direction: row;
+      line-height: 2em;
+      gap: 50px;
+      transition: all 0s ease-in-out;
+      height: auto;
+      margin-top: 8px;
+    }
+  
+    .button a {
+      margin: 0;
+      padding: 16px 32px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  
+    .button {
+      margin-top: 18px;
+      cursor: pointer;
+      margin-left: 9px;
+      line-height: 24px;
+      letter-spacing: 2.4px;
+    }
+  
+    .menu-items {
+      padding-top: 14px;
+      padding-left: 10px;
+      font-size: 24px;
+    }
+  
+    .fa-angle-down {
+      color: white;
+      cursor: pointer;
+      font-size: 27px;
+      display: block;
+      padding-left: 4.6em;
+      transform: translateY(-30px);
     }
 
-    .button a{
-        margin: 0;
-        padding: 12px 30px;
-        font-size: 16px;
-        font-weight: bold;
+    .hamburger{
+      display: none;
+      appearance: auto;
     }
+  }
 
-    .button{
-        margin-top: 14px;
-        cursor: pointer;
-        margin-bottom: 12px;
-        margin-left: 0;
-    }
-
-    .menu-items{
-        padding-top: 12px;
-        padding-left: 10px;
-        font-size: 16px;
-    }
-
-    .fa-angle-down{
-        color: white;
-        cursor: pointer;
-        font-size: 20px;
-        display: block;
-        padding-left: 4em;
-        transform: translateY(-25px);
-    }
-}
-@media screen and (min-width:1300px) and (max-width: 1380px) {
+  @media screen and (min-width:2000px) and (max-width:2600px) {
     .navigation-item{
-        gap: 18%;
+        gap: 25% !important;
     }
 
     .menu{
-        gap: 46px;
+        gap: 7% !important;
     }
 
-    .hero-text h1 {
-        font-size: 115px !important;
-    }
-}
-@media screen and (min-width:1440px) and (max-width: 1440px) {
-    .navigation-item{
-        gap: 20% !important;
+    .menu-items {
+        font-size: 30px;
     }
 
-    .menu{
-        gap: 44px !important;
-        /* margin-top: 16px !important; */
+    .button a {
+        font-size: 28px;
     }
-}
+  }
 
-@media screen and (min-width:1680px) and (max-width: 1680px) {
-   .menu{    
-        /* line-height: 1em !important; */
-        gap: 65px !important;
-        margin-top: 16px !important;
-    }
+  @media screen and (min-width:1600px) and (max-width:1600px) {
+   .menu{
+    gap: 36px;
+   } 
 
-    .fa-angle-down{
-        top: 14% !important;
-        padding-left: 3.4em  !important;
-        transform: translateY(-27px)  !important;
-    }
+   .hero-text > h1 {
+    font-size: 133px;
+    line-height: 122px;
+  }
 
-    .menu-items{
-        font-size: 18px !important;
-    }
-
-    .button a{
-        font-size: 16px !important;
-    }
-}
-
-@media screen and (min-width:1441px) and (max-width:1980px){
-    
-    .logo{
-        max-width: 20%;
-        margin-left: 0;
-        /* border: 1px solid #ffff; */
-        padding-left: 64px;
-    }
-
-    .logo img{
-        width: 250px;
-    }
-
-    .hamburger-bar,.hamburger-xmark{
-        display: none;
-    }
-
-    .navigation-item{
-        gap: 18%;
-        height: 90px;
-        align-items: center;
-        position: static;
-    }
-
-    .menu{
-        position: static;
-        margin-top: 12px;
-        flex-direction: row;
-        line-height: 2em;
-        gap: 77px;
-        transition: all 0s ease-in-out;
-    }
-
-    .button a{
-        margin: 0;
-        padding: 16px 32px;
-        font-size: 18px;
-        font-weight: bold;
-    }
-
-    .button{
-        margin-top: 18px;
-        cursor: pointer;
-        margin-left: 9px;
-        line-height: 24px;
-        letter-spacing: 2.4px;
-    }
-
-    .menu-items{
-        /* position: relative; */
-        padding-top: 14px;
-        padding-left: 10px;
-        font-size: 24px;
-    }
-
-    .fa-angle-down{
-        color: white;
-        cursor: pointer;
-        font-size: 27px;
-        display: block;
-        padding-left: 4.6em;
-        transform: translateY(-30px);
-    }
-}
+  input {
+    transform: translate(58em, 1em) !important;
+  }
+  }
+  
