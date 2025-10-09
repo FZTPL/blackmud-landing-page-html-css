@@ -1,189 +1,227 @@
+/* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.inter {
+  font-family: "Inter";
+}
+
+.container {
+  padding: 1px 24px 24px;
+  background-color: #D9D9D9;
+}
+
+.video-content-text {
+  padding-top: 100px;
+}
+
+.border {
+  border-bottom: 1px solid black;
+  width: 10%;
+}
+
+.container h1 {
+  padding-top: 24px;
+  font-size: 46px;
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: -2px;
+  line-height: 46px;
+  padding-bottom: 26px;
+}
+
+.container h2 {
+  color: #3582E5;
+  width: 84px;
+  font-size: 14px;
+  padding-top: 26px;
+  font-weight: 600;
+  padding-bottom: 4px;
+  line-height: 24px;
+}
+
+.card-image img,
+.card-image video {
+  width: 100%;
+}
+
+.card-content h5 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  padding: 20px 0 4px;
+  width: 84px;
+}
+
+.card-content h3 {
+  font-size: 28px;
+  line-height: 33.6px;
+  color: #000000;
+  letter-spacing: -0.84px;
+  padding: 20px 0;
+  transition: color 0.3s ease;
+}
+
+.video-button > a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.video-button {
+  padding: 12px 20px;
+  background-color: #FFFF;
+  text-align: center;
+  color: #000000;
+  border: 0;
+  margin: 40px 0;
+}
+
+/* Play/Pause Button */
+.play-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #ffff;
+  border-radius: 50%;
+  transform: translate(5px, -52px);
+}
+
+/* Radio Button */
+.checkplay {
+  transform: translate(19px, 17em);
+  appearance: none;
+  position: relative;
+  z-index: 1;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* Hide video by default */
+video {
+  display: none;
+}
+
+/* Show video when radio checked */
+input[type="radio"]:checked ~ video {
+  display: block;
+}
+
+/* Hide image when radio checked */
+input[type="radio"]:checked ~ img {
+  display: none;
+}
+
+/* Play/Pause Icon Styles */
+.playy-arrow,
+.card-image .paused-arrow {
+  width: 14px !important;
+  transform: translate(14px, 10px) !important;
+}
+
+.card-image .paused-arrow {
+  width: 19px !important;
+  transform: translate(10px, 10px) !important;
+  display: none;
+}
+
+/* Show pause icon when checked */
+input.checkplay:checked ~ .play-btn .playy-arrow {
+  display: none;
+}
+
+input.checkplay:checked ~ .play-btn .paused-arrow {
+  display: inline-block;
+}
+
+/* Change play button color when checked */
+input.checkplay:checked ~ .play-btn {
+  background-color: #3582E5;
+}
+
+/* Change h3 color when radio checked using :has() */
+.card:has(.checkplay:checked) .card-content h3 {
+  color: #3582E5;
+}
+
+/* iPad 6th Generation Styles */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .video-content-text {
+    padding-top: 150px;
   }
-  
-  .inter {
-    font-family: "Inter";
+
+  input.checkplay {
+    transform: translate(340%, 3400%);
   }
-  
-  .container {
-    padding: 1px 24px 24px;
-    background-color: #D9D9D9;
+
+  .play-btn {
+    width: 60px;
+    height: 60px;
+    transform: translate(15px, -80px);
   }
-  
-  .border {
-    border-bottom: 1px solid black;
-    width: 8%;
+
+  .playy-arrow,
+  .card-image .paused-arrow {
+    width: 18px !important;
+    transform: translate(24px, 17px) !important;
   }
-  
+
+  .card-image .paused-arrow {
+    width: 26px !important;
+    transform: translate(17px, 17px) !important;
+  }
+
   .container h1 {
-    padding-top: 24px;
-    font-size: 46px;
-    color: #000000;
-    font-weight: 600;
-    letter-spacing: -2px;
-    line-height: 46px;
+    font-size: 66px;
+    line-height: 66px;
     padding-bottom: 26px;
   }
-  
+
   .container h2 {
-    color: #3582E5;
-    width: 84px;
-    font-size: 14px;
-    padding-top: 26px;
-    font-weight: 600;
-    padding-bottom: 8px;
-    line-height: 24px;
-  }
-  
-  .card-image img {
-    width: 100%;
-  }
-  
-  .card-image video {
-    width: 100%;
-  }
-  
-  .card-content h5 {
     font-size: 16px;
-    line-height: 24px;
-    color: #666666;
-    padding: 20px 0;
-    width: 84px;
+    padding-bottom: 10px;
   }
-  
+
+  .border {
+    width: 5%;
+  }
+
+  .card-content h5 {
+    font-size: 22px;
+    padding: 20px 0 10px;
+  }
+
   .card-content h3 {
-    font-size: 28px;
-    line-height: 33.6px;
-    color: #000000;
-    letter-spacing: -0.84px;
-    padding: 20px 0;
+    font-size: 32px;
+    line-height: 37.6px;
   }
-  
-  .video-button > a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-  }
-  
+
   .video-button {
-    padding: 12px 20px;
-    background-color: #FFFF;
-    text-align: center;
-    color: #000000;
-    border: 0;
-    margin: 40px 0;
+    padding: 20px 25px;
+    margin: 0em 0 3em;
   }
-  
-  .play-btn {
-    width: 40px;
-    height: 40px;
-    background-color: #ffff;
-    border-radius: 50%;
-    transform: translate(5px, -52px);
-  }
-  
-  .checkplay {
-    transform: translate(19px, 15em);
-    appearance: none;
-    position: relative;
-    z-index: 1;
-    border: 6px solid transparent;
-    border-radius: 50%;
-  }
-  
-  /* Hide the video by default */
-  video {
-    display: none;
-  }
-  
-  /* When the checkbox is checked, hide the image sibling */
-  input[type="checkbox"]:checked ~ img {
-    display: none;
-  }
-  
-  /* When the checkbox is checked, show the video sibling */
-  input[type="checkbox"]:checked ~ video {
-    display: block;
-  }
-  
-  .card-image {
-    max-height: 236px;
-  }
-  
-  .card-image .playy-arrow,
-  .card-image .pused-arrow {
-    width: 14px !important;
-    transform: translate(14px, 10px) !important;
-  }  
 
-  /* Hide pause icon by default */
-.pused-arrow {
-    display: none;
+  .video-button > a {
+    font-size: 16px;
   }
-  
-  /* When checked: show pause, hide play */
-  input[type="checkbox"]:checked ~ .play-btn .playy-arrow {
-    display: none;
-  }
-  
-  input[type="checkbox"]:checked ~ .play-btn .pused-arrow {
-    display: inline-block;
-  }
-  
-  /* When checked: change play-btn color */
-  input[type="checkbox"]:checked ~ .play-btn {
-    background-color: #3582E5; /* blue */
-  }
-  
-  /* This is copyed from ai tools to hide timer,speaker and full screen */
 
-  /* This will hide the entire controls bar */
-video::-webkit-media-controls-panel {
-    display: none !important;
+  .card-image img {
+    width: 99%;
   }
-  
-  /* If you want to be more specific and hide individual elements: */
-  
-  /* Hide the timeline (timer) */
-  video::-webkit-media-controls-timeline {
-    display: none;
-  }
-  
-  /* Hide the mute/unmute button */
-  video::-webkit-media-controls-mute-button {
-    display: none;
-  }
-  
-  /* Hide the volume slider (if present) */
-  video::-webkit-media-controls-volume-slider {
-    display: none;
-  }
-  
-  /* Hide the current time display */
-  video::-webkit-media-controls-current-time-display {
-    display: none;
-  }
-  
-  /* Hide the remaining time display */
-  video::-webkit-media-controls-time-remaining-display {
-    display: none;
-  }
-  
-  /* Hide the fullscreen button */
-  video::-webkit-media-controls-fullscreen-button {
-    display: none;
-  }
-  
-  /* Hide the "three dots" menu (for download, etc.) */
-  video::-webkit-media-controls-enclosure {
-      overflow: hidden;
-  }
-  
-  video::-webkit-media-controls-panel-enclosure {
-      display: none;
-  }
+}
+
+/* Hide Native Video Controls */
+video::-webkit-media-controls-panel,
+video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-mute-button,
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-fullscreen-button,
+video::-webkit-media-controls-enclosure,
+video::-webkit-media-controls-panel-enclosure {
+  display: none !important;
+}
