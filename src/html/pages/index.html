@@ -1,281 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Risk Management</title>
-    <link rel="stylesheet" href="../../css/hero-section.css" />
-    <link rel="stylesheet" href="../../css/navigation.css" />
-    <link rel="stylesheet" href="../../css/about-us.css" />
-    <link rel="stylesheet" href="../../css/accordion.css" />
-  </head>
-  <body>
-    <!-- Navigation-section -->
-    <div class="navigation-item inter">
-      <input id="check" class="hamburger" type="checkbox" />
-      <label for="check" class="hamburger-bar">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-      <label for="check" class="hamburger-xmark">
-        <i class="fa-solid fa-xmark"></i>
-      </label>
-      <div class="logo">
-        <a href="#"
-          ><img src="../../image/blackmudlogo.svg" alt="Blackmud Logo"
-        /></a>
-      </div>
-      <ul class="menu">
-        <li class="menu-items"><a href="#">HOME</a></li>
-        <li class="menu-items"><a href="#">ABOUT US</a></li>
-        <li class="menu-items">
-          <a href="#">SERVICES</a>
-          <i class="fa-solid fa-angle-down"></i>
-        </li>
-        <li class="menu-items"><a href="#">BLOG</a></li>
-        <li class="menu-items"><a href="#">CONTACT US</a></li>
-        <li class="button"><a href="#">GET STARTED</a></li>
-      </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <title>Risk Management</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/hero-section.css" />
+  <link rel="stylesheet" href="../../css/navigation.css" />
+  <link rel="stylesheet" href="../../css/about-us.css" />
+  <link rel="stylesheet" href="../../css/accordion.css" />
+</head>
+
+<body>
+  <!-- Navigation-section -->
+  <div class="navigation-item inter">
+    <input id="check" class="hamburger" type="checkbox" />
+    <label for="check" class="hamburger-bar">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </label>
+    <label for="check" class="hamburger-xmark">
+      <i class="fa-solid fa-xmark"></i>
+    </label>
+    <div class="logo">
+      <a href="#"><img src="../../image/blackmudlogo.svg" alt="Blackmud Logo" /></a>
     </div>
-    <!-- hero-section -->
-    <div class="hero">
-      <div class="hero-text">
-        <h1>
-          Protect your <span class="linebreakk">assets </span> with risk
-          management
-        </h1>
-        <p>
-          Our commitment to providing exceptional service starts with
-          <span class="linebreak">
-            our team members. We carefully select and train each
-          </span>
-          member of our team to ensure they have the skills.
-        </p>
-        <button class="hero-button"><a href="#">GET STARTED</a></button>
-      </div>
-      <div class="hero-image">
+    <ul class="menu">
+      <li class="menu-items"><a href="#">HOME</a></li>
+      <li class="menu-items"><a href="#">ABOUT US</a></li>
+      <li class="menu-items">
+        <a href="#">SERVICES</a>
+        <i class="fa-solid fa-angle-down"></i>
+      </li>
+      <li class="menu-items"><a href="#">BLOG</a></li>
+      <li class="menu-items"><a href="#">CONTACT US</a></li>
+      <li class="button"><a href="#">GET STARTED</a></li>
+    </ul>
+  </div>
+  <!-- hero-section -->
+  <div class="hero">
+    <div class="hero-image">
+      <img src="../../image/city.jpeg" alt="" />
+    </div>
+    <div class="hero-text">
+      <h1>
+        Protect your assets with risk
+        management
+      </h1>
+      <p>
+        Our commitment to providing exceptional service starts with<span class="break">
+        our team members. We carefully select and train each</span>
+        member of our team to ensure they have the skills.
+      </p>
+      <button class="hero-button"><a href="#">GET STARTED</a></button>
+    </div>
+    <!-- <div class="hero-image">
         <img src="../../image/city.jpeg" alt="" />
+      </div> -->
+  </div>
+  <!-- About-US -->
+  <div class="aboutus inter">
+    <div class="aboutus-first-image">
+      <img src="../../image/aboutus.png" alt="" />
+    </div>
+    <div class="aboutus-text">
+      <div class="border">
+        <h2>ABOUT US</h2>
+      </div>
+      <h1>Empowering your financial future</h1>
+      <p>
+        We understand that financial planning can be a complex and
+        <span class="linebreak">daunting task for many individuals and businesses. That's </span><span
+          class="linebreak">why we're here to guide you every step of the way, providing </span>tailored solutions that
+        align with your unique financial.
+      </p>
+      <button class="aboutus-button"><a href="#">LEARN MORE</a></button>
+    </div>
+    <div class="aboutus-image">
+      <img src="../../image/aboutus.png" alt="" />
+    </div>
+  </div>
+  <!-- Accordion component -->
+  <div class="container inter">
+    <div class="accordion-title">
+      <div class="title-border">
+        <h2>SERVICES</h2>
+      </div>
+      <h1>
+        Customized <span class="linebreaks"> financial solutions </span>
+      </h1>
+    </div>
+    <div class="accordion-text">
+      <div class="accordion-component">
+        <div class="accordion-border">
+          <h2>01</h2>
+        </div>
+        <div class="accordion-icon">
+          <h1 class="color-blue">Financial planning</h1>
+          <div class="accordion-circle display">
+            <img class="plus" src="../../image/plus.png" alt="" /><img class="minus" src="../../image/icon.png"
+              alt="" />
+          </div>
+        </div>
+        <input type="radio" id="accordion" name="open-close" />
+        <label for="accordion"></label>
+        <div class="height">
+          <p>
+            We understand that financial planning can be a complex and
+            <span class="linebreak">daunting task for many individuals and businesses. That's </span><span
+              class="linebreak">why we're here to guide you. </span>
+          </p>
+          <button class="accordion-button"><a href="#">LEARN MORE</a></button>
+          <div class="accordion-image display">
+            <img src="../../image/accordion.png" alt="" />
+            <div class="accordion-circle">
+              <img src="../../image/icon.png" alt="" /><img class="minus" src="../../image/icon.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="accordion-image appearance">
+          <img src="../../image/accordion.png" alt="" />
+        </div>
+        <div class="accordion-circle appearance">
+          <img class="plus" src="../../image/plus.png" alt="" /><img class="minus" src="../../image/icon.png" alt="" />
+        </div>
       </div>
     </div>
-    <!-- About-US -->
-    <div class="aboutus inter">
-      <div class="aboutus-text">
-        <div class="border"><h2>ABOUT US</h2></div>
-        <h1>Empowering your financial future</h1>
+    <!-- accordion-2 -->
+    <div class="accordion-content">
+      <div class="accordion-border">
+        <h2>02</h2>
+      </div>
+      <div class="accordion-icon">
+        <h1 class="business">Business planning</h1>
+        <div class="accordion-circles businesss display">
+          <img class="business-plus" src="../../image/plus.png" alt="" /><img class="business-minus common"
+            src="../../image/icon.png" alt="" />
+        </div>
+      </div>
+      <input type="radio" id="accordion1" name="open-close" />
+      <label for="accordion1"></label>
+      <div class="height">
         <p>
           We understand that financial planning can be a complex and
-          <span class="linebreak"
-            >daunting task for many individuals and businesses. That's </span
-          ><span class="linebreak"
-            >why we're here to guide you every step of the way, providing </span
-          >tailored solutions that align with your unique financial.
+          <span class="linebreak">daunting task for many individuals and businesses. That's </span><span
+            class="linebreak">why we're here to guide you. </span>
         </p>
-        <button class="aboutus-button"><a href="#">LEARN MORE</a></button>
+        <button class="accordion-button"><a href="#">LEARN MORE</a></button>
+        <div class="accordion-image display">
+          <img src="../../image/accordion.png" alt="" />
+          <div class="accordion-circle">
+            <img src="../../image/icon.png" alt="" /><img class="minus" src="../../image/icon.png" alt="" />
+          </div>
+        </div>
       </div>
-      <div class="aboutus-image">
-        <img src="../../image/aboutus.png" alt="" />
+      <div class="accordion-image appearance">
+        <img src="../../image/accordion.png" alt="" />
+      </div>
+      <div class="accordion-circle appearance">
+        <img class="plus" src="../../image/plus.png" alt="" /><img class="minus" src="../../image/icon.png" alt="" />
       </div>
     </div>
-    <!-- Accordion component -->
-    <div class="container inter">
-      <div class="accordion-title">
-        <div class="title-border"><h2>SERVICES</h2></div>
-        <h1>
-          Customized <span class="linebreaks"> financial solutions </span>
+    <!-- accordion-3 -->
+    <div class="accordion-content">
+      <div class="accordion-border">
+        <h2>03</h2>
+      </div>
+      <div class="accordion-icon">
+        <h1 class="invest">Invest management</h1>
+        <div class="accordion-circles investt display">
+          <img class="invest-plus" src="../../image/plus.png" alt="" /><img class="invest-minus common"
+            src="../../image/icon.png" alt="" />
+        </div>
+      </div>
+      <input type="radio" id="accordion2" name="open-close" />
+      <label for="accordion2"></label>
+      <div class="height">
+        <p>
+          We understand that financial planning can be a complex and
+          <span class="linebreak">daunting task for many individuals and businesses. That's </span><span
+            class="linebreak">why we're here to guide you. </span>
+        </p>
+        <button class="accordion-button"><a href="#">LEARN MORE</a></button>
+        <div class="accordion-image display">
+          <img src="../../image/accordion.png" alt="" />
+          <div class="accordion-circle">
+            <img src="../../image/icon.png" alt="" /><img class="minus" src="../../image/icon.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="accordion-image appearance">
+        <img src="../../image/accordion.png" alt="" />
+      </div>
+      <div class="accordion-circle appearance">
+        <img class="plus" src="../../image/plus.png" alt="" /><img class="minus" src="../../image/icon.png" alt="" />
+      </div>
+    </div>
+    <!-- accordion-4 -->
+    <div class="accordion-content padding-button">
+      <div class="accordion-border">
+        <h2>04</h2>
+      </div>
+      <div class="accordion-icon">
+        <h1 class="retire">
+          Retirement <span class="linebreaks">management</span>
         </h1>
-      </div>
-      <div class="accordion-text">
-        <div class="accordion-component">
-          <div class="accordion-border"><h2>01</h2></div>
-          <div class="accordion-icon">
-            <h1 class="color-blue">Financial planning</h1>
-            <div class="accordion-circle display">
-              <img class="plus" src="../../image/plus.png" alt="" /><img
-                class="minus"
-                src="../../image/icon.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <input type="radio" id="accordion" name="open-close" />
-          <label for="accordion"></label>
-          <div class="height">
-            <p>
-              We understand that financial planning can be a complex and
-              <span class="linebreak"
-                >daunting task for many individuals and businesses. That's </span
-              ><span class="linebreak">why we're here to guide you. </span>
-            </p>
-            <button class="accordion-button"><a href="#">LEARN MORE</a></button>
-            <div class="accordion-image display">
-              <img src="../../image/accordion.png" alt="" />
-              <div class="accordion-circle">
-                <img src="../../image/icon.png" alt="" /><img
-                  class="minus"
-                  src="../../image/icon.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <div class="accordion-image displays">
-            <img src="../../image/accordion.png" alt="" />
-          </div>
-          <div class="accordion-circle displays">
-            <img class="plus" src="../../image/plus.png" alt="" /><img
-              class="minus"
-              src="../../image/icon.png"
-              alt=""
-            />
-          </div>
+        <div class="accordion-circles retiree display margin-top">
+          <img class="retire-plus" src="../../image/plus.png" alt="" /><img class="retire-minus common"
+            src="../../image/icon.png" alt="" />
         </div>
       </div>
-      <!-- accordion-2 -->
-      <div class="accordion-content">
-        <div class="accordion-border"><h2>02</h2></div>
-        <div class="accordion-icon">
-          <h1 class="business">Business planning</h1>
-          <div class="accordion-circles businesss display">
-            <img class="business-plus" src="../../image/plus.png" alt="" /><img
-              class="business-minus common"
-              src="../../image/icon.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <input type="radio" id="accordion1" name="open-close" />
-        <label for="accordion1"></label>
-        <div class="height">
-          <p>
-            We understand that financial planning can be a complex and
-            <span class="linebreak"
-              >daunting task for many individuals and businesses. That's </span
-            ><span class="linebreak">why we're here to guide you. </span>
-          </p>
-          <button class="accordion-button"><a href="#">LEARN MORE</a></button>
-          <div class="accordion-image display">
-            <img src="../../image/accordion.png" alt="" />
-            <div class="accordion-circle">
-              <img src="../../image/icon.png" alt="" /><img
-                class="minus"
-                src="../../image/icon.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div class="accordion-image displays">
+      <input type="radio" id="accordion3" name="open-close" />
+      <label for="accordion3"></label>
+      <div class="height">
+        <p>
+          We understand that financial planning can be a complex and
+          <span class="linebreak">daunting task for many individuals and businesses. That's </span><span
+            class="linebreak">why we're here to guide you. </span>
+        </p>
+        <button class="accordion-button"><a href="#">LEARN MORE</a></button>
+        <div class="accordion-image display">
           <img src="../../image/accordion.png" alt="" />
-        </div>
-        <div class="accordion-circle displays">
-          <img class="plus" src="../../image/plus.png" alt="" /><img
-            class="minus"
-            src="../../image/icon.png"
-            alt=""
-          />
+          <div class="accordion-circle">
+            <img src="../../image/icon.png" alt="" /><img class="minus" src="../../image/icon.png" alt="" />
+          </div>
         </div>
       </div>
-      <!-- accordion-3 -->
-      <div class="accordion-content">
-        <div class="accordion-border"><h2>03</h2></div>
-        <div class="accordion-icon">
-          <h1 class="invest">Invest management</h1>
-          <div class="accordion-circles investt display">
-            <img class="invest-plus" src="../../image/plus.png" alt="" /><img
-              class="invest-minus common"
-              src="../../image/icon.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <input type="radio" id="accordion2" name="open-close" />
-        <label for="accordion2"></label>
-        <div class="height">
-          <p>
-            We understand that financial planning can be a complex and
-            <span class="linebreak"
-              >daunting task for many individuals and businesses. That's </span
-            ><span class="linebreak">why we're here to guide you. </span>
-          </p>
-          <button class="accordion-button"><a href="#">LEARN MORE</a></button>
-          <div class="accordion-image display">
-            <img src="../../image/accordion.png" alt="" />
-            <div class="accordion-circle">
-              <img src="../../image/icon.png" alt="" /><img
-                class="minus"
-                src="../../image/icon.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div class="accordion-image displays">
-          <img src="../../image/accordion.png" alt="" />
-        </div>
-        <div class="accordion-circle displays">
-          <img class="plus" src="../../image/plus.png" alt="" /><img
-            class="minus"
-            src="../../image/icon.png"
-            alt=""
-          />
-        </div>
+      <div class="accordion-image appearance">
+        <img src="../../image/accordion.png" alt="" />
       </div>
-      <!-- accordion-4 -->
-      <div class="accordion-content padding-button">
-        <div class="accordion-border"><h2>04</h2></div>
-        <div class="accordion-icon">
-          <h1 class="retire">
-            Retirement <span class="linebreaks">management</span>
-          </h1>
-          <div class="accordion-circles retiree display margin-top">
-            <img class="retire-plus" src="../../image/plus.png" alt="" /><img
-              class="retire-minus common"
-              src="../../image/icon.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <input type="radio" id="accordion3" name="open-close" />
-        <label for="accordion3"></label>
-        <div class="height">
-          <p>
-            We understand that financial planning can be a complex and
-            <span class="linebreak"
-              >daunting task for many individuals and businesses. That's </span
-            ><span class="linebreak">why we're here to guide you. </span>
-          </p>
-          <button class="accordion-button"><a href="#">LEARN MORE</a></button>
-          <div class="accordion-image display">
-            <img src="../../image/accordion.png" alt="" />
-            <div class="accordion-circle">
-              <img src="../../image/icon.png" alt="" /><img
-                class="minus"
-                src="../../image/icon.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div class="accordion-image displays">
-          <img src="../../image/accordion.png" alt="" />
-        </div>
-        <div class="accordion-circle displays">
-          <img class="plus" src="../../image/plus.png" alt="" /><img
-            class="minus"
-            src="../../image/icon.png"
-            alt=""
-          />
-        </div>
+      <div class="accordion-circle appearance">
+        <img class="plus" src="../../image/plus.png" alt="" /><img class="minus" src="../../image/icon.png" alt="" />
       </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>

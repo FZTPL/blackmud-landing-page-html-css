@@ -1,240 +1,329 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter';
+.aboutus {
+  background-color: #D9D9D9;
+  color: white;
+  padding-top: 50px;
 }
-.aboutus{
-    background-color: #D9D9D9;
-    color: white;
-    /* height: auto; */
-    padding-top: 100px;
+
+.aboutus-text {
+  padding: 0 24px 44px;
+}
+
+.aboutus-text > p {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 24px;
+  line-height: 21px;
+  color: #666666;
+  margin-bottom: 28px;
+}
+
+.aboutus-button > a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.aboutus-button {
+  padding: 12px 20px;
+  background-color: #FFFF;
+  text-align: center;
+  color: #000000;
+  border: 0;
+}
+
+.aboutus-text > h1 {
+  padding-top: 24px;
+  font-size: 41px;
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: -2px;
+  line-height: 41px;
+}
+
+.aboutus h2 {
+  color: #3582E5;
+  width: 84px;
+  font-size: 14px;
+  padding-top: 26px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  line-height: 24px;
+}
+
+.aboutus-first-image > img {
+  width: 89%;
+  height: 25em;
+  object-fit: cover;
+  margin: 20px 0 18px 22px;
+}
+
+.border {
+  border-bottom: 1px solid black;
+  width: 11%;
+}
+
+.aboutus-image {
+  display: none;
+}
+
+/* Tablet */
+@media screen and (min-width:768px) and (max-width:1024px) { 
+  .aboutus-button > a {
+    font-size: 16px;
+    letter-spacing: 2px;
   }
-  
-  .aboutus-text{
-    padding: 0 24px 24px;
+
+  .aboutus-text > h1 {
+    padding-top: 28px;
+    font-size: 72px;
+    letter-spacing: -2px;
+    line-height: 72px;
   }
-  
-  .aboutus-text > p{
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 32px;
-    line-height: 21px;
-    color: #666666;
+
+  .aboutus-text > p {
+    font-size: 16px;
+    margin-top: 64px;
+    line-height: 24px;
     margin-bottom: 40px;
   }
-  
-  .aboutus-button > a{
-    color: #000000;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-  }
-  
-  .aboutus-button{
-    padding: 12px 20px;
-    background-color: #FFFF;
-    text-align: center;
-    color: #000000;
-    border: 0;
-  }
-  
-  .aboutus-text > h1{
-    padding-top: 24px;
-    font-size: 46px;
-    color: #000000;;
-    font-weight: 600;
-    letter-spacing: -2px;
-    line-height: 46px;
+
+  .aboutus-first-image > img {
+    width: 94%;
+    height: 34em;
   }
 
-  .aboutus  h2{
-    color: #3582E5;
-    width: 84px;
-    font-size: 14px;
-    padding-top: 26px;
-    font-weight: 600;
-    padding-bottom: 8px;
+  .border {
+    width: 6%;
+  }
+
+  .aboutus-button {
+    padding: 14px 24px;
+  }
+}
+@media screen and (min-width:1024px) and (max-width:1024px)  {
+  .aboutus-text > h1 {
+    font-size: 54px !important;
+    letter-spacing: -1px !important;
+}
+
+.aboutus-text > p {
+  font-size: 14px !important;
+  margin-top: 50px !important;
+  line-height: 20px !important;
+}
+
+.accordion-border {
+  width: 4% !important;
+}
+}
+/* Medium Desktop */
+@media screen and (min-width:1024px) and (max-width:1440px) {
+  .border {
+    width: 42px;
+    padding-top: 0;
+  }
+
+  .aboutus-text {
+    grid-column: 1 / 9; 
+    padding-bottom: 200px;
+  }
+
+  .aboutus-text > h1 {
+    padding-top: 32px;
+    font-size: 76px; 
+    font-weight: 700;
+    letter-spacing: -4px;
+    line-height: 100%;
+  }
+
+  .aboutus-text > p {
+    font-size: 16px; 
+    font-weight: 500;
+    margin-bottom: 40px;
+    margin-top: 72px;
     line-height: 24px;
   }
-  
-  .aboutus-image > img{
-    width: 89%;
-    height: 25em;
-    object-fit: cover;
-    margin: 0 0 18px 22px;
-    margin-top: 20px;
+
+  .aboutus {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 200px;
+    padding-left: 64px; 
   }
 
-  .border{
-    border-bottom: 1px solid black;
-    width: 11%;
+  .aboutus-image {
+    grid-column: 9 / 13; 
+    background-image: url(../image/aboutus.png);
+    background-size: cover;
+    background-position: center;
+    display: block;
   }
 
-  @media screen and (min-width:768px) and (max-width:1024px) { 
-    .aboutus-button > a{
-        font-size: 16px;
-        /* padding-left: 8px; */
-        letter-spacing: 2px;
-    }
-  
-    .aboutus-text > h1{
-        padding-top: 28px;
-        font-size: 72px;
-        letter-spacing: -2px;
-        line-height: 72px;
-    }
-  
-      .aboutus{
-        padding-top: 150px;
-      }
-      .aboutus-text > p{
-        font-size: 16px;
-        margin-top: 64px;
-        line-height: 24px;
-        margin-bottom: 40px;
-    }
-  
-      .aboutus-image > img{
-        width: 94%;
-        height: 34em;
-    }
-  
-      .border{
-        padding-top: 150px;
-        width: 6%;
-    }
-
-      .aboutus-button{
-        padding: 14px 24px;
-    }
+  .aboutus-image > img {
+    display: none;
   }
 
-  /* @media screen and  (min-width:1024px) and (max-width:1440px) {
-    .aboutus-text{
-      grid-column: 1/7 !important;
-    }
-
-    .aboutus-image{
-      grid-column: 8/13 !important;
-    }
-  } */
-
-  @media screen and  (min-width:1024.1px) and (max-width:1440px) {
-    .border{
-      width: 42px;
-      padding-top: 0;
-    }
-
-    .aboutus-text{
-      grid-column: 1/9;
-      padding-bottom: 200px;
-    }
-
-    .aboutus-text > h1{
-      padding-top: 32px;
-      /* font-size: 88px; */
-      font-size: 72px;
-      font-weight: 700;
-      letter-spacing: -4px;
-      line-height: 100%;
-    }
-
-    .aboutus-text > p{
-      font-size: 14px;
-      /* font-size: 16px; */
-      font-weight: 500;
-      margin-bottom: 40px;
-      margin-top: 72px;
-      line-height: 24px;
-    }
-
-    .aboutus{
-      display: grid;
-      grid-template-columns: repeat(12,1fr);
-      padding-top: 200px;
-      padding-left: 64px;
-    }
-
-    .aboutus-image{
-      grid-column: 9/13;
-      background-image: url(../image/aboutus.png);
-      background-size: cover;
-      background-position: center;
-    }
-
-    .aboutus-image > img{
-      display: none;
-    }
-
-    .aboutus-button{
-      Padding: 16px 32px;
-    }
-
-    .aboutus-button a{
-      font-size: 16px;
-      font-weight: 700;
-    }
-    .linebreak{
-      display: block;
-    }
+  .aboutus-button {
+    padding: 16px 32px;
   }
-  
-  @media screen and (min-width:1441px){
-    .border{
-      width: 34px;
-      padding-top: 0;
-    }
 
-    .aboutus-text{
-      grid-column: 1/7;
-      padding-bottom: 202px;
-    }
-
-    .aboutus-text > h1{
-      padding-top: 36px;
-      font-size: 90px;
-      font-weight: 700;
-      letter-spacing: -4px;
-      line-height: 100%;
-    }
-
-    .aboutus-text > p{
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 42px;
-      margin-top: 74px;
-      line-height: 26px;
-    }
-
-    .aboutus{
-      display: grid;
-      grid-template-columns: repeat(12,1fr);
-      padding-top: 200px;
-      padding-left: 66px;
-    }
-
-    .aboutus-image{
-      grid-column: 8/13;
-      background-image: url(../image/aboutus.png);
-      background-size: cover;
-      background-position: center;
-    }
-
-    .aboutus-image > img{
-      display: none;
-    }
-
-    .aboutus-button{
-      Padding: 20px 36px;
-    }
-
-    .aboutus-button a{
-      font-size: 18px;
-      font-weight: 700;
-    }
-    .linebreak{
-      display: block;
-    }
+  .aboutus-button a {
+    font-size: 16px;
+    font-weight: 700;
   }
+
+  .linebreak {
+    display: block;
+  }
+
+  .aboutus-first-image {
+    display: none;
+  }
+}
+
+/* Large Desktop */
+@media screen and (min-width:1441px) {
+  .border {
+    width: 34px;
+    padding-top: 0;
+  }
+
+  .aboutus-text {
+    grid-column: 1/7;
+    padding-bottom: 202px;
+  }
+
+  .aboutus-text > h1 {
+    padding-top: 36px;
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: -4px;
+    line-height: 100%;
+  }
+
+  .aboutus-text > p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 42px;
+    margin-top: 74px;
+    line-height: 26px;
+  }
+
+  .aboutus {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    padding-top: 200px;
+    padding-left: 66px;
+  }
+
+  .aboutus-image {
+    grid-column: 8/13;
+    background-image: url(../image/aboutus.png);
+    background-size: cover;
+    background-position: center;
+    display: block;
+  }
+
+  .aboutus-image > img {
+    display: none;
+  }
+
+  .aboutus-button {
+    padding: 20px 36px;
+  }
+
+  .aboutus-button a {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .linebreak {
+    display: block;
+  }
+
+  .aboutus-first-image {
+    display: none;
+  }
+}
+@media screen and (min-width:2000px) and (max-width:2600px) {
+  .border {
+    width: 71px;
+    padding-top: 0px;
+  }
+
+  .aboutus-text {
+    grid-column: 1/7;
+    padding-bottom: 202px;
+  }
+
+  .aboutus-text > h1 {
+    padding-top: 36px;
+    font-size: 136px;
+    font-weight: 700;
+    letter-spacing: -4px;
+    line-height: 100%;
+  }
+
+  .aboutus h2 {
+    color: #3582E5;
+    width: 177px;
+    font-size: 28px;
+    padding-top: 26px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    line-height: 24px;
+}
+
+  .aboutus-text > p {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 95px;
+    margin-top: 74px;
+    line-height: 36px;
+  }
+
+  .aboutus {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    padding-top: 200px;
+    padding-left: 66px;
+    height: 90em;
+  }
+
+  .aboutus-image {
+    grid-column: 8/13;
+    background-image: url(../image/aboutus.png);
+    background-size: cover;
+    background-position: center;
+    display: block;
+  }
+
+  .aboutus-image > img {
+    display: none;
+  }
+
+  .aboutus-button {
+    padding: 28px 47px;
+  }
+
+  .aboutus-button a {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .linebreak {
+    display: block;
+  }
+
+  .aboutus-first-image {
+    display: none;
+  }
+}    
+
+@media screen and (min-width:1512px) and (max-width:1512px) {
+.aboutus-text > h1{
+  font-size: 84px;
+}
+}
