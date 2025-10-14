@@ -108,7 +108,7 @@
     padding: 8px;
 }
 
-input {
+.radio-openclose {
     margin-left: 92%;
     transform: translateY(-28px);
     appearance: none;
@@ -349,7 +349,7 @@ input {
         padding: 13px;
     }
     
-    input{
+    .radio-openclose{
         transform: translate(45.3em, -2em);
         margin-left: 0%;
     }
@@ -420,7 +420,7 @@ input {
 }
 
 @media screen and (min-width:1024px) and (max-width:1024px) {
-    input {
+    .radio-openclose {
         transform: translate(45.3em, -2em) !important;
         margin-left: 29% !important;
     }
@@ -548,7 +548,7 @@ input {
         display: block;
     }
     
-    input{
+    .radio-openclose{
         transform: translate(44.3em, 1em);
         z-index: 1;
         margin-left: 1%;
@@ -677,7 +677,7 @@ input {
         transform: translate(50em, -4.5em) !important;
     }
 
-    input{
+    .radio-openclose{
         transform: translate(61em, 1em) !important;
     }
 }
@@ -812,7 +812,7 @@ input {
         margin-top: 85px;
     }
 
-    input {
+    .radio-openclose {
         transform: translate(69em, 1em);
         z-index: 1;
         margin-left: 1%;
@@ -921,7 +921,7 @@ input {
 }
 
 @media screen and (min-width:1512px) and (max-width:1512px){
-    input {
+    .radio-openclose {
         transform: translate(55em, 1em);
     }
 
@@ -945,7 +945,7 @@ input {
 
 @media screen and (min-width:1792px) and (max-width:1792px) {
   
-    input{
+    .radio-openclose{
       transform: translate(62em, 1em) !important;
     }
   
@@ -1099,7 +1099,7 @@ input {
         margin-top: 85px;
     }
 
-    input {
+    .radio-openclose {
         transform: translate(92em, 1em);
         z-index: 1;
         margin-left: 1%;
@@ -1209,7 +1209,7 @@ input {
 
 @media screen and (min-width: 1600px) and (max-width: 1680px) {
 
-    input {
+    .radio-openclose {
         transform: translate(58em, 1em) !important;
     }
 
