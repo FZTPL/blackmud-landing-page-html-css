@@ -148,18 +148,18 @@
         padding: 30px 53px;
         font-size: 20px;
    }
-
+  
    .financial-text p{
         font-size: 20px;
         line-height: 28px;
    }
-
+  
    .financial-image > img {
         width: 94%;
         margin: 0 0 32px 30px;
         height: auto;
     }
-
+  
     .break {
         display: contents;
     }
@@ -322,7 +322,7 @@
       height: 64em;
     }
   }
-
+  
   @media screen and (min-width: 1920px) and (max-width: 1980px){
     .financial-text > h1 {
         padding-top: 128px;
@@ -386,7 +386,7 @@
     .financial-image > img {
       display: none;
     }
-
+  
     .break{
         display: block;
     }
