@@ -29,7 +29,7 @@
 }
 
 .linebreak{
-  display: none;
+  display: contents;
 }
 
 .video-container h2 {
