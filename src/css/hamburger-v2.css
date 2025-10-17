@@ -1,15 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: content-box;
-}
-
-.inter{
-    font-family: "Inter";
-    /* font-weight: 700; */
-    font-style: normal;
-}
-
 .navigation-item{
     display: flex;
     background-color: black;
