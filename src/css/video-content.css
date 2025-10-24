@@ -42,8 +42,8 @@
 }
 
 .card-image img {
-  max-height: 211px;
-  width: 374px;
+  max-height: 100%;
+  width: 96%;
 }
 
 .card-content h5 {
@@ -106,7 +106,7 @@
 
 /* Hide video by default */
 video {
-  display: none;
+  /* display: none; */
 }
 
 /* Show video when radio checked */
@@ -217,8 +217,8 @@ input.checkplay:checked ~ .play-btn {
   }
 
   .card-image img{
-    max-height: 297px;
-    width: 540px;
+    max-height: 100%;
+    width: 96%;
   }
 
   .checkplay:checked{
@@ -361,12 +361,13 @@ video::-webkit-media-controls-panel-enclosure {
   }
 
   .card-image video {
-    width: 100%;
+    width: 96%;
     
 }
 
 .card-image img{
-  /* max-height: 330px; */
+  max-height: 100%;
+  width: 96%;
 }
 
 .transform{
@@ -391,7 +392,7 @@ video::-webkit-media-controls-panel-enclosure {
 
 @media screen and (min-width:1680px) and (max-width:1680px) {
   .checkplay {
-    transform: translate(24px, 27.4em) !important;
+    transform: translate(31px, 31.4em) !important;
     }
 
     .card-content {
@@ -448,9 +449,9 @@ video::-webkit-media-controls-panel-enclosure {
 }
 
 @media screen and (min-width:1920px) {
-  .card-image img{
+  /* .card-image img{
     width: 100%;
-  }
+  } */
 }
 
 @media screen and (min-width:1516px) {
@@ -553,6 +554,6 @@ video::-webkit-media-controls-panel-enclosure {
 
 @media screen and (min-width:1920px) and (max-width:1920px) {
   .checkplay {
-    transform: translate(24px, 27.4em);
+    transform: translate(31px, 36.8em);
   }
 }
