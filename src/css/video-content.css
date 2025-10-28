@@ -92,7 +92,7 @@
 
 /* Radio Button */
 .checkplay {
-  transform: translate(10px, 17em);
+  transform: translate(10px, 16em);
   appearance: none;
   position: relative;
   z-index: 1;
@@ -168,7 +168,7 @@ input.checkplay:checked ~ .play-btn {
   .play-btn {
     width: 60px;
     height: 60px;
-    transform: translate(15px, -80px);
+    transform: translate(24px, -80px);
   }
 
   .playy-arrow,
