@@ -166,7 +166,7 @@
     padding-top: 28px;
   }
   .border {
-    width: 6%;
+    width: 4%;
   }
   .slider-button {
     padding: 14px 24px;
@@ -179,6 +179,7 @@
     max-width: 372px;
     height: auto;
     max-height: 314.77px;
+    min-height: 400px;
   }
   #slider-current {
     font-size: 24px;
@@ -227,6 +228,7 @@
   }
   .slider-card img {
     max-width: 467px;
+    min-height: 500px;
   }
   #slider-current {
     font-size: 24px;
@@ -257,6 +259,7 @@
   .slider-controls {
     right: 68px;
     gap: 34em;
+    width: 88%;
   }
 }
 
@@ -272,6 +275,8 @@
   .slider-controls {
     right: 90px;
     gap: 40em;
+    bottom: 18em;
+    width: 86%;
   }
 }
 
