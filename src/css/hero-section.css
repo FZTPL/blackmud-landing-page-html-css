@@ -1,0 +1,369 @@
+.hero {
+  background-color: #000;
+  color: white;
+}
+
+.hero-text {
+  margin: 0 24px;
+}
+
+.hero-text > h1 {
+  font-size: 41px;
+  line-height: 41px;
+}
+
+.hero-text > p {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 26px 0 26px 0;
+  line-height: 20px;
+  color: #868686;
+}
+
+.hero-button {
+  padding: 18px 42px;
+  background-color: #3582E5;
+  text-align: center;
+  border: 0;
+  margin-bottom: 40px;
+}
+
+.hero-button > a {
+  color: #ffff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.hero-image > img {
+  width: 89%;
+  height: 25em;
+  object-fit: cover;
+  margin: 20px 0 18px 22px;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .hero-text > h1 {
+    padding-top: 80px;
+    font-size: 77px;
+    line-height: 74px;
+  }
+
+  .hero-text > p {
+    font-size: 16px;
+    margin-top: 64px;
+    line-height: 24px;
+  }
+
+  .hero-button {
+    padding: 24px 50px;
+  }
+
+  .hero-button > a {
+    font-size: 18px;
+  }
+
+  .hero-image > img {
+    width: 94%;
+    height: 34em;
+  }
+}
+
+/* 1024.1px - 1810px */
+@media screen and (min-width:1024px) and (max-width:1810px) {
+  .hero {
+    display: flex;
+    max-width: 1450px;
+    margin: auto;
+    background-image: none;
+  }
+
+  .break{
+    display: block;
+  }
+
+  .hero-text {
+    width: 40%;
+    margin-bottom: 60px;
+    margin-left: 47px;
+    order: 1;
+  }
+
+  .hero-text > h1 {
+    padding-top: 76px;
+    transform: translateX(14px);
+    width: 148%;
+    letter-spacing: -5.4px;
+  }
+
+  .hero-text > p {
+    margin-left: 24px;
+    margin-top: 74px;
+    margin-bottom: 48px;
+    letter-spacing: 0;
+  }
+
+  .hero-button {
+    margin-left: 24px;
+    margin-top: 48px;
+    padding: 16px 32px;
+  }
+
+  .hero-button > a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .hero-image {
+    width: 60%;
+    background-image: url(../image/city.jpeg);
+    background-position: right center;
+    background-size: cover;
+    order: 2;
+  }
+
+  .hero-image > img {
+    display: none;
+  }
+
+}
+
+/* 1280px ONLY */
+@media screen and (min-width:1280px) and (max-width:1280px) {
+  .hero-text h1 {
+    font-size: 108px !important;
+    line-height: 98px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    margin-top: 58px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1024px) {
+  .break{
+    display: none;
+  }
+}
+
+/* 1340px - 1440px */
+@media screen and (min-width:1340px) and (max-width:1440px) {
+  .hero-text h1 {
+    font-size: 115px !important;
+    line-height: 98px !important;
+  }
+
+  .hero-text p {
+    font-size: 18px !important;
+    line-height: 26px;
+  }
+
+  .hero-button {
+    margin-top: 0px;
+  }
+
+  .hero {
+  height: 696px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1440px){
+  .hero {
+      height: 830px !important;
+  }
+
+  .hero-text > h1{
+    font-size: 121px !important;
+    line-height: 108px !important;
+  }
+
+}
+
+/* 1441px - 1980px */
+@media screen and (min-width:1441px) and (max-width:1980px) {
+  .hero {
+    display: flex;
+    margin: auto;
+    background-image: none;
+    max-width: none;
+    height: 886px;
+  }
+
+  .hero-text {
+    width: 40%;
+    margin-bottom: 60px;
+    margin-left: 47px;
+    order: 1;
+  }
+
+  .hero-text > h1 {
+    padding-top: 86px;
+    transform: translateX(14px);
+    width: 148%;
+    font-size: 156px;
+    line-height: 142px;
+    letter-spacing: -5.4px;
+  }
+
+  .hero-text > p {
+    margin-left: 24px;
+    margin-top: 80px;
+    margin-bottom: 16px;
+    font-size: 23px;
+    line-height: 34px;
+  }
+
+  .hero-button {
+    margin-left: 24px;
+    margin-top: 38px;
+    padding: 16px 32px;
+  }
+
+  .hero-button > a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .hero-image {
+    width: 60%;
+    background-image: url(../image/city.jpeg);
+    background-position: right center;
+    background-size: cover;
+    order: 2;
+  }
+
+  .hero-image > img {
+    display: none;
+  }
+}
+
+/* 1600px - 1700px */
+@media screen and (min-width:1600px) and (max-width:1700px) {
+  .hero {
+    height: 840px !important;
+  }
+
+  .hero-text p {
+    font-size: 20px !important;
+  }
+
+  .hero-text > p {
+    margin-bottom: 16px;
+    line-height: 28px;
+}
+}
+
+/* 1680px ONLY */
+@media screen and (min-width:1680px) and (max-width:1680px) {
+  .hero-text h1 {
+    font-size: 138px !important;
+    line-height: 114px !important;
+  }
+
+  .hero-text p {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+}
+
+/* 1900px - 1980px */
+@media screen and (min-width:1900px) and (max-width:1980px) {
+  .hero-button {
+    padding: 18px 36px;
+  }
+
+  .hero-button > a {
+    font-size: 22px;
+  }
+
+  .hero{
+    height: 992px !important;
+  }
+}
+
+@media screen and (min-width:1512px) and (max-width:1512px) {
+  .hero-text > h1{
+    font-size: 126px !important;
+    line-height: 120px !important;
+  }
+
+  .hero-text > p{
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+  @media screen and (min-width:2000px) and (max-width:2600px) {
+    .hero {
+      display: flex;
+      margin: auto;
+      background-image: none;
+      max-width: none;
+      height: 85em;
+    }
+  
+    .hero-text {
+      width: 40%;
+      margin-bottom: 60px;
+      margin-left: 47px;
+      order: 1;
+    }
+  
+    .hero-text > h1 {
+      padding-top: 124px;
+      transform: translateX(14px);
+      width: 148%;
+      font-size: 216px;
+      line-height: 173px;
+      letter-spacing: -11.4px;
+    }
+  
+    .hero-text > p {
+      margin-left: 24px;
+      margin-top: 4em;
+      margin-bottom: 2.4em;
+      font-size: 34px;
+      line-height: 46px;
+    }
+  
+    .hero-button {
+      margin-left: 24px;
+      margin-top: 38px; 
+      padding: 36px 48px;
+    }
+  
+    .hero-button > a {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  
+    .hero-image {
+      width: 60%;
+      background-image: url(../image/city.jpeg);
+      background-position: right center;
+      background-size: cover;
+      order: 2;
+    }
+  
+    .hero-image > img {
+      display: none;
+    }
+  }
+
+@media screen and (min-width:1792px) and (max-width:1792px) {
+  .hero-text > h1{
+    font-size: 146px;
+    line-height: 132px;
+  }
+
+  .hero-text > p{
+    margin-bottom: 40px;
+  }
+
+  .hero{
+    height: 64em;
+  }
+}

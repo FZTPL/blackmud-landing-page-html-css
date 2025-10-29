@@ -1,0 +1,108 @@
+.navigation-item{
+    display: flex;
+    background-color: black;
+    padding: 10px 10px 8px 0;
+    text-align: center;
+}
+
+.menu li:first-child{
+    font-weight: 700;
+}
+
+.logo{
+    margin-left: 62%;
+    max-width: 50%;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.hamburger-bar{
+    color: white;
+    position: absolute;
+    font-size: 28px;
+    left: 18px;
+    top: 10px;
+}
+
+.hamburger-xmark{
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    left: 14px;
+    top: 10px;
+}
+
+input{
+    position: relative;
+    display: none;
+    z-index: 1;
+}
+
+#check:checked ~ .hamburger-bar{
+    visibility: hidden;
+    opacity: 0;
+}
+
+#check:checked ~ .hamburger-xmark{
+   transition:  all 0.2s ease-in ;
+   opacity: 1;
+}
+
+.hamburger-xmark{
+    opacity: 0;
+}
+
+.menu-items{
+    margin: 10px;
+}
+
+.menu{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    list-style: none;
+    line-height: 3em;
+    text-align: right;
+    margin-top: 10%;
+    right: -100%;
+    transition: all 0.15s ease-in-out;
+}
+
+#check:checked ~ .menu{
+    right: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.button a{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .menu{
+        margin-top: 8%;
+    }
+
+    .hamburger-bar{
+        font-size: 3em;
+    }
+
+    .hamburger-xmark{
+        font-size: 3em;
+    }
+
+    .menu-items{
+        font-size: 1.4em;
+    }
+
+    .button{
+        font-size: 20px;
+    }
+}
