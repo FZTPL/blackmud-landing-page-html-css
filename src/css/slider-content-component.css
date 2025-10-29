@@ -9,6 +9,10 @@
   padding: 0 24px 20px;
 }
 
+.w-full{
+  width: 100%;
+}
+
 .slider-text h1 {
   padding-top: 24px;
   font-size: 41px;
@@ -56,12 +60,12 @@
 }
 
 .slider-card img {
-  width: 100%;
+  /* width: 100%; */
   max-width: 467px;
   height: auto;
   border-radius: 8px;
   object-fit: cover;
-  max-height: 396.14px;
+  max-height:500px;
 }
 
 .slider-card .date {
@@ -245,7 +249,7 @@
   }
   .slider-controls {
     position: absolute;
-    bottom: 21em;
+    bottom: 19em;
     right: 72px;
     display: flex;
     align-items: center;
@@ -261,11 +265,15 @@
   }
 }
 
-@media screen and (min-width: 810px) and (max-width: 920px) {
-  .slider-controls {
-    right: 68px;
-    gap: 48%;
-    width: 85%;
+
+@media screen and (min-width: 1900px) and (max-width: 1960px) {
+  .break{
+    display: block !important;
+  }
+
+  .slider-card img{
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -274,13 +282,31 @@
     right: 90px;
     gap: 40em;
   }
+
+  .break{
+    display: contents;
+  }
+
+  .w-full{
+    width: auto !important;
+  }
 }
 
 @media screen and (min-width: 1512px) and (max-width: 1512px) {
+  .break{
+    display: contents !important
+    ;
+  }
+
+  .slider-card img {
+    max-height: 500px;
+  }
+
   .slider-controls{
     gap: 66% !important;
   }
 }
+
 
 
 @media screen and (min-width: 1441px) {
@@ -326,6 +352,7 @@
   }
   .slider-card img {
     max-height: 500px;
+    /* width: 100%; */
   }
   .slider-card .title {
     font-size: 32px;
@@ -334,4 +361,67 @@
   .slider-text {
     padding: 0 24px 90px;
   }
+  .break{
+    display: block;
+  }
 }
+
+/* @media screen and (min-width: 2000px) {
+  .slider-card img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 820px;
+    max-width: 100%;
+  }
+
+  .slider-card .title {
+    font-size: 43px;
+    line-height: 52px;
+}
+
+  .slider-card .date {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .slider-controls {
+    position: absolute;
+    bottom: 25em;
+    right: 60px;
+    display: flex;
+    align-items: center;
+    gap: 63%;
+    width: 93%;
+  }
+
+  .progress-container {
+    width: 800px;
+    height: 8px;
+  }
+
+  #slider-current {
+    font-size: 22px;
+    line-height: 38px;
+  }
+
+  #slider-total {
+    font-size: 18px;
+  }
+
+  .slider h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .border {
+    width: 46px;
+  }
+
+  .slider-button {
+    padding: 28px 42px;
+  }
+
+  .slider-button a {
+    font-size: 22px;
+}
+} */
