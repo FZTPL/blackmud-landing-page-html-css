@@ -60,12 +60,12 @@
 }
 
 .slider-card img {
-  /* width: 100%; */
+  width: 100%;
   max-width: 467px;
   height: auto;
-  border-radius: 8px;
   object-fit: cover;
-  max-height:500px;
+  min-height:500px;
+  max-height: 500px;
 }
 
 .slider-card .date {
@@ -229,9 +229,6 @@
   .slider-button a {
     font-size: 16px;
     font-weight: 700;
-  }
-  .slider-card img {
-    max-width: 467px;
   }
   #slider-current {
     font-size: 24px;
