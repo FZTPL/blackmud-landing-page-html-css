@@ -120,7 +120,7 @@
 }
 
 .progress-container {
-  width: 200px;
+  width: 180px;
   height: 4px;
   background-color: #444;
   margin-top: 16px;
@@ -157,7 +157,7 @@
     line-height: 28px !important;
   }
   .slider-controls {
-    gap: 18%;
+    gap: 22%;
     bottom: 8em;
     width: 83%;
   }
@@ -271,6 +271,8 @@
   .slider-card img{
     width: 100%;
     max-width: 100%;
+    max-height: 800px;
+    min-height: 800px;
   }
 }
 
@@ -348,8 +350,9 @@
     width: 92%;
   }
   .slider-card img {
-    max-height: 500px;
+    max-height: 600px;
     /* width: 100%; */
+    min-height: 600px;
   }
   .slider-card .title {
     font-size: 32px;
