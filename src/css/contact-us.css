@@ -1,0 +1,61 @@
+.contactus {
+    background-color: #D9D9D9;
+    color: white;
+    padding-top: 50px;
+}
+
+.email{
+    margin-top: 20px;
+}
+
+.email a{
+    text-decoration: none;
+    font-size: 41px;
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: -2px;
+    line-height: 41px;
+}
+
+.contactus-text {
+    padding: 0 24px 44px;
+}
+
+.contactus h2 {
+    color: #3582E5;
+    width: 84px;
+    font-size: 14px;
+    padding-top: 26px;
+    font-weight: 600;
+    padding-bottom: 2px;
+    line-height: 24px;
+}
+
+.border {
+    border-bottom: 1px solid black;
+    width: 11%;
+}
+
+.color{
+    color: #666666;
+}
+
+.map{
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
+
+.nav-text a{
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 2.40px;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.nav{
+    list-style: none;
+    margin-top: 40px;
+}
