@@ -59,3 +59,40 @@
     list-style: none;
     margin-top: 40px;
 }
+
+.location-title{
+    color: #666666;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    margin: 14px 0;
+}
+
+.break{
+    display: block;
+}
+
+.location-content{
+    color: #000000;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.facebook{
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    height: 40px;
+}
+
+.fa-facebook-f{
+    padding-left: 14px;
+    padding-top: 12px;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
