@@ -2,6 +2,7 @@
     background-color: #D9D9D9;
     color: white;
     padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .email{
@@ -10,11 +11,11 @@
 
 .email a{
     text-decoration: none;
-    font-size: 41px;
+    font-size: 36px;
     color: #000000;
     font-weight: 600;
     letter-spacing: -2px;
-    line-height: 41px;
+    line-height: 36px;
 }
 
 .contactus-text {
@@ -79,20 +80,178 @@
     font-weight: 400;
 }
 
-.facebook{
+.media{
     width: 40px;
     background-color: white;
     border-radius: 50%;
     height: 40px;
 }
 
-.fa-facebook-f{
+.fa-facebook-f, .fa-twitter, .fa-linkedin-in{
     padding-left: 14px;
     padding-top: 12px;
+    color: #000000;
 }
 
 .icons{
     display: flex;
     gap: 20px;
     margin-top: 20px;
+}
+
+.svg-img{
+    height: 30px;
+    width: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.footer {
+    padding: 20px 0;
+  }
+  
+.footer-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0 40px;
+    color: #666666;
+    flex-direction: column;
+    /* text-align: center; */
+    gap: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.copyright{
+    font-size: 12px;
+    line-height: 18px;
+
+}
+
+.footer-links a{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contactus {
+        padding-top: 100px;
+        padding-bottom: 150px;
+    }
+    
+    .email{
+        margin-top: 34px;
+    }
+    
+    .email a{
+        font-size: 58px;
+        letter-spacing: -1px;
+        line-height: 58px;
+    }
+    
+    .contactus-text {
+        padding: 0 24px 44px;
+    }
+    
+    .contactus h2 {
+        font-size: 16px;
+        padding-bottom: 4px;
+        line-height: 32px;
+    }
+    
+    .border {
+        width: 7%;
+    }
+    
+    .color{
+        color: #666666;
+    }
+    
+    .map{
+        height: 226px;;
+    }
+    
+    .nav-text a{
+        font-size: 26px;
+        line-height: 34px;
+    }
+    
+    .location-title{
+        font-size: 18px;
+        line-height: 24px;
+        margin: 22px 0;
+    }
+    
+    .break{
+        display: block;
+    }
+    
+    .location-content{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .media{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .fa-facebook-f, .fa-twitter, .fa-linkedin-in{
+        padding-left: 19px;
+        padding-top: 16px;
+    }
+    
+    .icons{
+        gap: 40px;
+        margin-top: 34px;
+    }
+    
+    .svg-img{
+        height: 36px;
+        width: 45px;
+        padding-left: 5px;
+        padding-top: 14px;
+    }
+    
+    .footer {
+        padding: 20px 0;
+      }
+      
+    .footer-container {
+        gap: 16px;
+    }
+    
+    .footer-links {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .footer-links a {
+        color: #666666;
+        text-decoration: none;
+    }
+    
+    .copyright{
+        font-size: 16px;
+        line-height: 24px;
+    
+    }
+    
+    .footer-links a{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
 }
