@@ -31,7 +31,7 @@
   line-height: 24px;
 }
 
-.border {
+.slider-border {
   border-bottom: 1px solid #D9D9D9;
   width: 11%;
 }
@@ -170,7 +170,7 @@
     letter-spacing: -2px;
     padding-top: 28px;
   }
-  .border {
+  .slider-border {
     width: 6%;
   }
   .slider-button {
@@ -215,7 +215,7 @@
     padding-top: 32px;
     font-weight: 700;
   }
-  .border {
+  .slider-border {
     width: 42px;
   }
   .slider {
@@ -315,7 +315,7 @@
     letter-spacing: -4px;
     padding-top: 36px;
   }
-  .border {
+  .slider-border {
     width: 34px;
   }
   .slider {
