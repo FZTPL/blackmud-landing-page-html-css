@@ -7,7 +7,7 @@
   padding-top: 100px;
 }
 
-.border {
+.video-border {
   border-bottom: 1px solid black;
   width: 30px;
 }
@@ -22,7 +22,7 @@
   padding-bottom: 26px;
 }
 
-.linebreak{
+.linebreak {
   display: contents;
 }
 
@@ -36,10 +36,8 @@
   line-height: 24px;
 }
 
-.card-image img,
 .card-image video {
   width: 100%;
-  max-height: 14em;
 }
 
 .card-content h5 {
@@ -100,31 +98,21 @@
   margin-left: 0;
 }
 
-/* Hide video by default */
-video {
-  display: none;
-}
-
 /* Show video when radio checked */
 input[type="radio"]:checked ~ video {
   display: block;
 }
 
-/* Hide image when radio checked */
-input[type="radio"]:checked ~ img {
-  display: none;
-}
-
 /* Play/Pause Icon Styles */
 .playy-arrow,
 .card-image .paused-arrow {
-  width: 14px !important;
-  transform: translate(14px, 10px) !important;
+  width: 9px !important;
+  transform: translate(17px, 10px) !important;
 }
 
 .card-image .paused-arrow {
-  width: 19px !important;
-  transform: translate(10px, 10px) !important;
+  width: 14px !important;
+  transform: translate(13px, 10px) !important;
   display: none;
 }
 
@@ -148,7 +136,7 @@ input.checkplay:checked ~ .play-btn {
 }
 
 /* iPad 6th Generation Styles */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .video-container {
     padding: 1px 64px;
   }
@@ -158,7 +146,7 @@ input.checkplay:checked ~ .play-btn {
   }
 
   input.checkplay {
-    transform: translate(29px, 27.6em);
+    transform: translate(29px, 28em);
   }
 
   .play-btn {
@@ -189,7 +177,7 @@ input.checkplay:checked ~ .play-btn {
     padding-bottom: 10px;
   }
 
-  .border {
+  .video-border {
     width: 5%;
   }
 
@@ -212,47 +200,57 @@ input.checkplay:checked ~ .play-btn {
     font-size: 16px;
   }
 
-  .card-image img {
-    width: 99%;
-  }
-
-  .checkplay:checked{
+  .checkplay:checked {
     transform: translate(36px, 27em);
   }
 
-  .linebreak{
+  .linebreak {
     display: contents;
-  }
-
-  video, .card-image img{
-    max-height: 25em !important;
   }
 }
 
 @media screen and (min-width:300px) and (max-width:400px) {
-  .checkplay{
+  .checkplay {
     transform: translate(10px, 14em) !important;
-  }
-}
-
-@media screen and (min-width:820px) and (max-width:1024px) {
-
-  video{
-    max-height: 26em;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1024px) {
   input {
-      margin-left: 0 !important;
+    margin-left: 0 !important;
   }
 
-  video, .card-image img{
-    max-height: 34em !important;
+  .checkplay {
+    transform: translate(29px, 17em) !important;
+  }
+  .card-content h3 {
+    font-size: 36px !important;
+    line-height: 44px !important;
+}
+    .card-content {
+        transform: translateY(1em) !important;
+    }
+
+    .playy-arrow, .card-image .paused-arrow {
+      transform: translate(22px, 18px) !important;
   }
 
-  .checkplay{
-    transform: translate(29px, 38.4em) !important;
+  .card-image .paused-arrow {
+    transform: translate(18px, 18px) !important;
+  }
+
+  .transform {
+    transform: translateY(3em) !important;
+  }
+
+  .play-btn{
+    width: 54px !important;
+    height: 54px !important;
+  }
+
+  .card-content h5 {
+    font-size: 18px !important;
+    line-height: 24px !important;
   }
 }
 
@@ -267,18 +265,14 @@ video::-webkit-media-controls-panel-enclosure {
   display: none !important;
 }
 
-@media screen and (min-width: 1024.1px) and (max-width: 2600px) {
+@media screen and (min-width: 1024px) and (max-width: 2600px) {
   .video-container {
     padding: 200px 80px;
   }
 
-  /* video{
-    height: 25em;
-  } */
-
   .card {
     display: flex;
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
     align-items: center;
     gap: 40px;
   }
@@ -288,7 +282,7 @@ video::-webkit-media-controls-panel-enclosure {
     width: 50%;
   }
 
-  .card-content{
+  .card-content {
     transform: translateY(6em);
   }
 
@@ -320,76 +314,68 @@ video::-webkit-media-controls-panel-enclosure {
     width: 40px;
   }
 
-  .linebreak{
+  .linebreak {
     display: block;
   }
 
-  .checkplay{
-    transform: translate(24px, 31.4em) ;
+  .checkplay {
+    transform: translate(24px, 31.4em);
   }
 
-  .play-btn{
+  .play-btn {
     width: 64px;
     height: 64px;
     transform: translate(14px, -83px);
   }
 
-  .playy-arrow, .card-image .paused-arrow {
+  .playy-arrow,
+  .card-image .paused-arrow {
     width: 14px !important;
-    transform: translate(28px, 22px) !important;
+    transform: translate(28px, 22px);
   }
 
   .card-image .paused-arrow {
     width: 19px !important;
-    transform: translate(22px, 22px) !important;
+    transform: translate(22px, 22px);
   }
 
-  .video-button{
+  .video-button {
     width: 178px;
     height: 59px;
     padding: 0;
   }
 
-  .video-button a{
+  .video-button a {
     font-size: 16px;
     font-weight: bold;
   }
 
-  .card-image img, .card-image video {
-    width: 98%;
-}
+  .transform {
+    transform: translateY(8em);
+  }
 
-.transform{
-  transform: translateY(8em);
-}
-
-.video-content-text{
-  padding-top: 0px;
-}
-
-.card-image img, video{
-  max-height: 25em !important;
-}
+  .video-content-text {
+    padding-top: 0px;
+  }
 }
 
 @media screen and (min-width:1280px) and (max-width:1280px) {
   .checkplay {
     transform: translate(24px, 22.4em) !important;
   }
-
 }
 
 @media screen and (min-width:1680px) and (max-width:1680px) {
   .checkplay {
     transform: translate(24px, 27.4em) !important;
-    }
+  }
 
-    .card-content {
-      transform: translateY(5em) !important;
-    }
+  .card-content {
+    transform: translateY(5em) !important;
+  }
 
-    .transform {
-      transform: translateY(7em) !important;
+  .transform {
+    transform: translateY(7em) !important;
   }
 }
 
@@ -417,10 +403,6 @@ video::-webkit-media-controls-panel-enclosure {
   .checkplay {
     transform: translate(24px, 24.4em);
   }
-
-  video{
-      height: 21em;
-  }
 }
 
 @media screen and (min-width:1440px) and (max-width:1980px) {
@@ -438,9 +420,7 @@ video::-webkit-media-controls-panel-enclosure {
 }
 
 @media screen and (min-width:1920px) {
-  .card-image img{
-    width: 100%;
-  }
+  /* removed .card-image img */
 }
 
 @media screen and (min-width:1516px) {
@@ -458,7 +438,7 @@ video::-webkit-media-controls-panel-enclosure {
     padding: 200px 80px;
   }
 
-  .card-content{
+  .card-content {
     transform: translateY(9em);
   }
 
@@ -490,11 +470,11 @@ video::-webkit-media-controls-panel-enclosure {
     line-height: 36px;
   }
 
-  .border {
+  .video-border {
     width: 40px;
   }
 
-  .linebreak{
+  .linebreak {
     display: block;
   }
 
@@ -502,13 +482,14 @@ video::-webkit-media-controls-panel-enclosure {
     transform: translate(31px, 41.4em);
   }
 
-  .play-btn{
+  .play-btn {
     width: 74px;
     height: 74px;
     transform: translate(14px, -91px);
   }
 
-  .playy-arrow, .card-image .paused-arrow {
+  .playy-arrow,
+  .card-image .paused-arrow {
     width: 18px !important;
     transform: translate(30px, 24px) !important;
   }
@@ -518,27 +499,16 @@ video::-webkit-media-controls-panel-enclosure {
     transform: translate(22px, 22px) !important;
   }
 
-  .video-button{
+  .video-button {
     width: 192px;
     height: 64px;
     padding: 0;
   }
 
-  .card-image img {
-    max-height: 36em !important;
-    object-fit: cover;
-}
-
-  .video-button a{
+  .video-button a {
     font-size: 20px;
     font-weight: bold;
   }
-
-  video {
-    max-height: 44em !important;
-  }
-
-  
 }
 
 @media screen and (min-width:1920px) and (max-width:1920px) {
