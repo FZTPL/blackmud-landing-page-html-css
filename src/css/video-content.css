@@ -1,13 +1,17 @@
+.video-wrapper {
+  width: 100%;
+}
+
 .video-container {
   padding: 1px 24px 24px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .video-content-text {
   padding-top: 100px;
 }
 
-.border {
+.video-border {
   border-bottom: 1px solid black;
   width: 30px;
 }
@@ -22,12 +26,12 @@
   padding-bottom: 26px;
 }
 
-.linebreak{
+.linebreak {
   display: contents;
 }
 
 .video-container h2 {
-  color: #3582E5;
+  color: #3582e5;
   width: 84px;
   font-size: 14px;
   padding-top: 26px;
@@ -36,10 +40,10 @@
   line-height: 24px;
 }
 
-.card-image img,
 .card-image video {
   width: 100%;
-  max-height: 14em;
+  /* border: 1px solid red; */
+  background-color: black;
 }
 
 .card-content h5 {
@@ -70,7 +74,7 @@
 
 .video-button {
   padding: 12px 20px;
-  background-color: #FFFF;
+  background-color: #ffff;
   text-align: center;
   color: #000000;
   border: 0;
@@ -84,6 +88,7 @@
   background-color: #ffff;
   border-radius: 50%;
   transform: translate(5px, -52px);
+  display: block;
 }
 
 /* Radio Button */
@@ -100,31 +105,21 @@
   margin-left: 0;
 }
 
-/* Hide video by default */
-video {
-  display: none;
-}
-
 /* Show video when radio checked */
 input[type="radio"]:checked ~ video {
   display: block;
 }
 
-/* Hide image when radio checked */
-input[type="radio"]:checked ~ img {
-  display: none;
-}
-
 /* Play/Pause Icon Styles */
 .playy-arrow,
 .card-image .paused-arrow {
-  width: 14px !important;
-  transform: translate(14px, 10px) !important;
+  width: 9px !important;
+  transform: translate(17px, 10px);
 }
 
 .card-image .paused-arrow {
-  width: 19px !important;
-  transform: translate(10px, 10px) !important;
+  width: 14px !important;
+  transform: translate(13px, 10px);
   display: none;
 }
 
@@ -139,26 +134,22 @@ input.checkplay:checked ~ .play-btn .paused-arrow {
 
 /* Change play button color when checked */
 input.checkplay:checked ~ .play-btn {
-  background-color: #3582E5;
+  background-color: #3582e5;
 }
 
 /* Change h3 color when radio checked using :has() */
 .card:has(.checkplay:checked) .card-content h3 {
-  color: #3582E5;
+  color: #3582e5;
 }
 
 /* iPad 6th Generation Styles */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .video-container {
     padding: 1px 64px;
   }
 
   .video-content-text {
     padding-top: 150px;
-  }
-
-  input.checkplay {
-    transform: translate(29px, 27.6em);
   }
 
   .play-btn {
@@ -189,7 +180,7 @@ input.checkplay:checked ~ .play-btn {
     padding-bottom: 10px;
   }
 
-  .border {
+  .video-border {
     width: 5%;
   }
 
@@ -212,48 +203,78 @@ input.checkplay:checked ~ .play-btn {
     font-size: 16px;
   }
 
-  .card-image img {
-    width: 99%;
-  }
-
-  .checkplay:checked{
+  .checkplay:checked {
     transform: translate(36px, 27em);
   }
 
-  .linebreak{
+  .linebreak {
     display: contents;
   }
-
-  video, .card-image img{
-    max-height: 25em !important;
-  }
 }
 
-@media screen and (min-width:300px) and (max-width:400px) {
-  .checkplay{
-    transform: translate(10px, 14em) !important;
-  }
-}
-
-@media screen and (min-width:820px) and (max-width:1024px) {
-
-  video{
-    max-height: 26em;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   input {
-      margin-left: 0 !important;
+    margin-left: 0 !important;
+  }
+  .card-content h3 {
+    font-size: 36px !important;
+    line-height: 44px !important;
+  }
+  .card-content {
+    transform: translateY(3em) !important;
   }
 
-  video, .card-image img{
-    max-height: 34em !important;
+  .playy-arrow,
+  .card-image .paused-arrow {
+    transform: translate(22px, 18px) !important;
   }
 
-  .checkplay{
-    transform: translate(29px, 38.4em) !important;
+  .card-image .paused-arrow {
+    transform: translate(18px, 18px) !important;
   }
+
+  .transform {
+    transform: translateY(4em) !important;
+  }
+
+  .play-btn {
+    width: 54px !important;
+    height: 54px !important;
+    transform: translate(12px, -66px);
+  }
+
+  .card-content h5 {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 40px;
+  }
+  .card-image video {
+    width: 500px;
+    height: 320px;
+  }
+
+  .video-container h2 {
+    font-size: 20px;
+  }
+
+  .video-border {
+    width: 40px;
+  }
+
+  .video-container h1 {
+    font-size: 66px;
+    line-height: 66px;
+    padding-bottom: 26px;
+}
+
+.md-block{
+  display: block;
+}
 }
 
 /* Hide Native Video Controls */
@@ -267,18 +288,19 @@ video::-webkit-media-controls-panel-enclosure {
   display: none !important;
 }
 
-@media screen and (min-width: 1024.1px) and (max-width: 2600px) {
+@media screen and (min-width: 1440px) {
+  .video-wrapper {
+    max-width: 1440px;
+    margin: auto;
+  }
+
   .video-container {
     padding: 200px 80px;
   }
 
-  /* video{
-    height: 25em;
-  } */
-
   .card {
     display: flex;
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
     align-items: center;
     gap: 40px;
   }
@@ -288,8 +310,8 @@ video::-webkit-media-controls-panel-enclosure {
     width: 50%;
   }
 
-  .card-content{
-    transform: translateY(6em);
+  .card-content {
+    transform: translateY(5em);
   }
 
   .video-container h1 {
@@ -316,233 +338,46 @@ video::-webkit-media-controls-panel-enclosure {
     line-height: 30px;
   }
 
-  .border {
-    width: 40px;
-  }
-
-  .linebreak{
+  .linebreak {
     display: block;
   }
 
-  .checkplay{
-    transform: translate(24px, 31.4em) ;
-  }
-
-  .play-btn{
+  .play-btn {
     width: 64px;
     height: 64px;
     transform: translate(14px, -83px);
   }
 
-  .playy-arrow, .card-image .paused-arrow {
+  .playy-arrow,
+  .card-image .paused-arrow {
     width: 14px !important;
-    transform: translate(28px, 22px) !important;
+    transform: translate(28px, 22px);
   }
 
   .card-image .paused-arrow {
     width: 19px !important;
-    transform: translate(22px, 22px) !important;
+    transform: translate(22px, 22px);
   }
 
-  .video-button{
+  .video-button {
     width: 178px;
     height: 59px;
     padding: 0;
   }
 
-  .video-button a{
+  .video-button a {
     font-size: 16px;
     font-weight: bold;
   }
 
-  .card-image img, .card-image video {
-    width: 98%;
-}
-
-.transform{
-  transform: translateY(8em);
-}
-
-.video-content-text{
-  padding-top: 0px;
-}
-
-.card-image img, video{
-  max-height: 25em !important;
-}
-}
-
-@media screen and (min-width:1280px) and (max-width:1280px) {
-  .checkplay {
-    transform: translate(24px, 22.4em) !important;
+  .video-content-text {
+    padding-top: 0px;
   }
 
-}
-
-@media screen and (min-width:1680px) and (max-width:1680px) {
-  .checkplay {
-    transform: translate(24px, 27.4em) !important;
-    }
-
-    .card-content {
-      transform: translateY(5em) !important;
-    }
-
-    .transform {
-      transform: translateY(7em) !important;
+  .card-image video {
+    height: 400px;
   }
-}
-
-@media screen and (min-width:1512px) and (max-width:1512px) {
-  .checkplay {
-    transform: translate(24px, 27.4em) !important;
-  }
-}
-
-@media screen and (min-width:1792px) and (max-width:1792px) {
-  .checkplay {
-    transform: translate(24px, 27.4em) !important;
-  }
-}
-
-@media screen and (min-width:1280px) and (max-width:1370px) {
-  .card-content {
-    transform: translateY(3em);
-  }
-
   .transform {
-    transform: translateY(5em);
-  }
-
-  .checkplay {
-    transform: translate(24px, 24.4em);
-  }
-
-  video{
-      height: 21em;
-  }
-}
-
-@media screen and (min-width:1440px) and (max-width:1980px) {
-  .card-content {
-    transform: translateY(4em);
-  }
-
-  .transform {
-    transform: translateY(6em);
-  }
-
-  .checkplay {
-    transform: translate(24px, 26.4em);
-  }
-}
-
-@media screen and (min-width:1920px) {
-  .card-image img{
-    width: 100%;
-  }
-}
-
-@media screen and (min-width:1516px) {
-  .card-content {
-    transform: translateY(5em);
-  }
-
-  .transform {
-    transform: translateY(6em);
-  }
-}
-
-@media screen and (min-width: 2000px) and (max-width:2600px) {
-  .video-container {
-    padding: 200px 80px;
-  }
-
-  .card-content{
-    transform: translateY(9em);
-  }
-
-  .transform {
-    transform: translateY(11em);
-  }
-
-  .video-container h1 {
-    font-size: 106px;
-    line-height: 106px;
-    letter-spacing: -4.2px;
-    padding-bottom: 120px;
-  }
-
-  .video-container h2 {
-    font-size: 24px;
-    line-height: 36px;
-  }
-
-  .card-content h3 {
-    font-size: 48px;
-    line-height: 58px;
-    padding: 10px 0 0;
-    letter-spacing: -1.44px;
-  }
-
-  .card-content h5 {
-    font-size: 24px;
-    line-height: 36px;
-  }
-
-  .border {
-    width: 40px;
-  }
-
-  .linebreak{
-    display: block;
-  }
-
-  .checkplay {
-    transform: translate(31px, 41.4em);
-  }
-
-  .play-btn{
-    width: 74px;
-    height: 74px;
-    transform: translate(14px, -91px);
-  }
-
-  .playy-arrow, .card-image .paused-arrow {
-    width: 18px !important;
-    transform: translate(30px, 24px) !important;
-  }
-
-  .card-image .paused-arrow {
-    width: 30px !important;
-    transform: translate(22px, 22px) !important;
-  }
-
-  .video-button{
-    width: 192px;
-    height: 64px;
-    padding: 0;
-  }
-
-  .card-image img {
-    max-height: 36em !important;
-    object-fit: cover;
-}
-
-  .video-button a{
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  video {
-    max-height: 44em !important;
-  }
-
-  
-}
-
-@media screen and (min-width:1920px) and (max-width:1920px) {
-  .checkplay {
-    transform: translate(24px, 27.4em);
+    transform: translateY(7em);
   }
 }

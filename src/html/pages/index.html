@@ -257,78 +257,80 @@
   </div>
 
   <!-- Video-content component -->
-  <div class="video-container inter">
-    <div class="video-content-text">
-        <div class="border">
-            <h2>WEBINARS</h2>
+  <section class="video-wrapper">
+    <div class="video-container inter">
+        <div class="video-content-text">
+            <div class="video-border">
+                <h2>WEBINARS</h2>
+            </div>
+            <h1>Building stable <span class="linebreak md-block">financial future</span></h1>
         </div>
-        <h1>Building stable <span class="linebreak">financial future</span></h1>
-    </div>
 
-    <!-- First Card -->
-    <div class="card">
-        <div class="card-content mt-0">
-            <div class="border">
-                <h5>EPS 25</h5>
+        <!-- First Card -->
+        <div class="card">
+            <div class="card-content mt-0">
+                <div class="video-border">
+                    <h5>EPS 25</h5>
+                </div>
+                <h3>Maximizing your <span class="linebreak"> investments: strategies </span> for growth</h3>
             </div>
-            <h3>Maximizing your <span class="linebreak"> investments: strategies </span> for growth</h3>
-        </div>
-        <div class="card-image mb">
-            <input class="checkplay" type="radio" name="play" />
-            <img src="../../image/video-content.png" alt="Video placeholder" />
-            <video controls muted autoplay loop playsinline>
-                <source src="../../video/mov_bbb.mp4" type="video/mp4" />
-            </video>
-            <div class="play-btn">
-                <img class="playy-arrow" src="../../image/play_arrow.png" alt="Play Button">
-                <img class="paused-arrow" src="../../image/paused.png" alt="Pause Button">
+            <div class="card-image mb">
+                <input class="checkplay" type="radio" name="play" id="v1" />
+                <!-- <img src="../../image/video-content.png" alt="Video placeholder" /> -->
+                <video controls muted loop playsinline poster="../../image/video-content.png">
+                    <source src="../../video/mov_bbb.mp4" type="video/mp4" />
+                </video>
+                <label for="v1" class="play-btn">
+                    <img class="playy-arrow" src="../../image/play_arrow.png">
+                    <img class="paused-arrow" src="../../image/paused.png">
+                </label>
             </div>
         </div>
-    </div>
 
-    <!-- Second Card -->
-    <div class="card">
-        <div class="card-content transform">
-            <div class="border">
-                <h5>EPS 24</h5>
+        <!-- Second Card -->
+        <div class="card">
+            <div class="card-content transform">
+                <div class="video-border">
+                    <h5>EPS 24</h5>
+                </div>
+                <h3>Investments strategies <span class="linebreak"> for a volatile market</span></h3>
             </div>
-            <h3>Investments strategies <span class="linebreak"> for a volatile market</span></h3>
-        </div>
-        <div class="card-image mb">
-            <input class="checkplay" type="radio" name="play" />
-            <img src="../../image/video-content.png" alt="Video placeholder" />
-            <video controls muted autoplay loop playsinline>
-                <source src="../../video/mov_bbb.mp4" type="video/mp4" />
-            </video>
-            <div class="play-btn">
-                <img class="playy-arrow" src="../../image/play_arrow.png" alt="Play Button">
-                <img class="paused-arrow" src="../../image/paused.png" alt="Pause Button">
+            <div class="card-image mb">
+                <input class="checkplay" type="radio" name="play" id="v2" />
+                <!-- <img src="../../image/video-content.png" alt="Video placeholder" /> -->
+                <video controls muted loop playsinline poster="../../image/video-content.png">
+                    <source src="../../video/mov_bbb.mp4" type="video/mp4" />
+                </video>
+                <label for="v2" class="play-btn">
+                    <img class="playy-arrow" src="../../image/play_arrow.png">
+                    <img class="paused-arrow" src="../../image/paused.png">
+                </label>
             </div>
         </div>
-    </div>
 
-    <!-- Third Card -->
-    <div class="card">
-        <div class="card-content">
-            <div class="border">
-                <h5>EPS 23</h5>
+        <!-- Third Card -->
+        <div class="card">
+            <div class="card-content">
+                <div class="video-border">
+                    <h5>EPS 23</h5>
+                </div>
+                <h3>Growth strategies <span class="linebreak"> for maximizing your </span> investments</h3>
             </div>
-            <h3>Growth strategies <span class="linebreak"> for maximizing your </span> investments</h3>
-        </div>
-        <div class="card-image mb">
-            <input class="checkplay" type="radio" name="play" />
-            <img src="../../image/video-content.png" alt="Video placeholder" />
-            <video controls muted autoplay loop playsinline>
-                <source src="../../video/mov_bbb.mp4" type="video/mp4" />
-            </video>
-            <div class="play-btn">
-                <img class="playy-arrow" src="../../image/play_arrow.png" alt="Play Button">
-                <img class="paused-arrow" src="../../image/paused.png" alt="Pause Button">
+            <div class="card-image mb">
+                <input class="checkplay" type="radio" name="play" id="v3" />
+                <!-- <img src="../../image/video-content.png" alt="Video placeholder" /> -->
+                <video controls muted loop playsinline poster="../../image/video-content.png">
+                    <source src="../../video/mov_bbb.mp4" type="video/mp4" />
+                </video>
+                <label for="v3" class="play-btn">
+                    <img class="playy-arrow" src="../../image/play_arrow.png">
+                    <img class="paused-arrow" src="../../image/paused.png">
+                </label>
             </div>
         </div>
+        <button class="video-button"><a href="#">LEARN MORE</a></button>
     </div>
-    <button class="video-button"><a href="#">LEARN MORE</a></button>
-</div>
+</section>
 <!-- Slider Component -->
 <section class="slider financial-inslider inter">
   <div class="slider-text">
@@ -425,6 +427,7 @@
 
 <!-- Custom Slider JS -->
 <script src="../../js/slider-content.js"></script>
+<script src="../../js/autoplay.js"></script>
 
 <!-- Contact Us -->
 <div class="contactus inter">
@@ -450,7 +453,7 @@
       <div class="location">
           <div>
               <h3 class="location-title">ADDRESS</h3>
-              <span class="location-content">Batsala Devi Hill Side Thapa <span class="break"> Gaun, Lalitpur
+              <span class="location-content">Batsala Devi Hill Side Thapa <span class="contact-break"> Gaun, Lalitpur
                       44700, NEPAL</span></span>
           </div>
           <div>
