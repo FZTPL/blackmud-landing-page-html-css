@@ -212,7 +212,7 @@ input.checkplay:checked ~ .play-btn {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
   input {
     margin-left: 0 !important;
   }
@@ -270,11 +270,11 @@ input.checkplay:checked ~ .play-btn {
     font-size: 66px;
     line-height: 66px;
     padding-bottom: 26px;
-}
+  }
 
-.md-block{
-  display: block;
-}
+  .md-block {
+    display: block;
+  }
 }
 
 /* Hide Native Video Controls */
